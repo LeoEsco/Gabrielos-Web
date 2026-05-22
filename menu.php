@@ -710,7 +710,7 @@
                     <div class="menu-item fade-in-up" data-category="Ensaladas">
                         <div class="menu-img">
                             <img src="imgmenu/pizzasarte/enscruj.jpeg" alt="Ensalada Pollo a la Plancha">
-                            <span class="price">$180</span>
+                            <span class="price">$199</span>
                         </div>
                         <div class="menu-info">
                             <h3>ENSALADA DE POLLO CRUJIENTE</h3>
