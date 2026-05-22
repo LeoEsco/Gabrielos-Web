@@ -124,6 +124,8 @@ document.addEventListener('DOMContentLoaded', () => {
         // Base de Datos de las 20 Reseñas
         const reviewsData = [
             { id: 1, name: "Francisco", lastname: "Rodríguez", time: "Hace 2 meses", text: "Me ayudaron a decorar todo para mi propuesta, me preguntaron si quería una canción en específico para el momento, la forma de corazón de la pizza fue un toque muy bonito, con cualquier petición era un si, lo recomiendo mucho sobre todo por la excelente comida, súper rica, la pizza, la pasta alfredo en especial y las bebidas súper frescas.", rating: 5, likes: 142, isHero: true },
+            { id: 21, name: "Blanca", lastname: "Treviño", time: "Hace 1 semana", text: "Simplemente deliciosa la pizza estilo Chicago… súper recomendable, el lugar muy bonito y agusto. La atención súper buena, al pendiente en todo momento y atención inmediata. Los recomiendo ampliamente..!", rating: 5, likes: 59 },
+            { id: 22, name: "Paula", lastname: "Rivas", time: "Hace 1 semana", text: "Todo super rico, fui con un amigo y la pizza estaba deliciosa, la cheve también estaba bien fría jajaa, Si pueden vengan a comer aquí, el personal es súper lindo y todos son súper amables 🫶🏻", rating: 5, likes: 68 },
             { id: 2, name: "Mayra", lastname: "Cobos", time: "Hace 3 meses", text: "Es la primera vez que los visito y me encantó su servicio, el lugar muy limpio y decorado súper lindo y con vista al cerro de la silla en la parte de arriba. Los meseros siempre al pendiente de todo y muy amables y rápidos. Comida riquísima, los recomiendo bastante 🙌🏻", rating: 5, likes: 24 },
             { id: 3, name: "Yesenia", lastname: "Arias", time: "Hace 10 meses", text: "La primera vez que acudo por recomendación de amigos y me gustó mucho el lugar por la calidad de los alimentos, la pizza 🍕 muy rica con su generosa cantidad de queso, pedimos papas con pimienta limón, pasta, todo muy rico, el agua de jamaica también.", rating: 5, likes: 12 },
             { id: 4, name: "Angel", lastname: "Tsuki", time: "Hace 2 años", text: "Uno de los mejores lugares donde venden pizzas y sobre todo artesanales, demasiado ricas las pizzas hechas al horno, la comida de cocina también esta igual de exquisita, 100% recomendado y sobre todo las bebidas que sirven", rating: 5, likes: 45 },
@@ -143,6 +145,7 @@ document.addEventListener('DOMContentLoaded', () => {
             { id: 18, name: "Patricia", lastname: "Chávez", time: "Hace 6 años", text: "Las pizzas son muy ricas y la atención es buena. Puedes ver todo el proceso de como preparan tu pizza.", rating: 4, likes: 72 },
             { id: 19, name: "Valeria", lastname: "Sanchez", time: "Hace 6 años", text: "Primera vez que voy a este lugar y lo recomiendo al 💯 muy rica la pizza 🤤 …", rating: 5, likes: 19 },
             { id: 20, name: "Yare", lastname: "Pérez", time: "Hace 4 años", text: "Excelente servicio, la comida deliciosa, sin dudas vuelvo a ir.", rating: 5, likes: 44 }
+            
         ];
 
         // Función para estrellas

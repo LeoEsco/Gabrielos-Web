@@ -22,27 +22,27 @@
 
         <div class="gallery-reel fade-in-right">
             <div class="reel-item">
-                <img src="imgmain/imgcarrusel/img1.jpg" alt="Pizza Detalle">
+                <img src="imgmain/imgcarrusel/img1.jpeg" alt="Pizza Detalle">
                 <div class="reel-overlay"><i class="fas fa-camera reel-icon"></i></div>
             </div>
             <div class="reel-item">
-                <img src="imgmain/imgcarrusel/img2.jpg" alt="Horno Fuego">
+                <img src="imgmain/imgcarrusel/img2.jpeg" alt="Horno Fuego">
                 <div class="reel-overlay"><i class="fas fa-fire reel-icon"></i></div>
             </div>
             <div class="reel-item">
-                <img src="imgmain/imgcarrusel/img3.jpg" alt="Pizza Mesa">
+                <img src="imgmain/imgcarrusel/img3.jpeg" alt="Pizza Mesa">
                 <div class="reel-overlay"><i class="fas fa-utensils reel-icon"></i></div>
             </div>
             <div class="reel-item">
-                <img src="imgmain/imgcarrusel/img4.jpg" alt="Bebidas">
+                <img src="imgmain/imgcarrusel/img4.jpeg" alt="Bebidas">
                 <div class="reel-overlay"><i class="fas fa-glass-cheers reel-icon"></i></div>
             </div>
             <div class="reel-item">
-                <img src="imgmain/imgcarrusel/img5.jpg" alt="Ingredientes">
+                <img src="imgmain/imgcarrusel/img5.jpeg" alt="Ingredientes">
                 <div class="reel-overlay"><i class="fas fa-leaf reel-icon"></i></div>
             </div>
             <div class="reel-item">
-                <img src="imgmain/imgcarrusel/img6.jpg" alt="Ambiente">
+                <img src="imgmain/imgcarrusel/img6.jpeg" alt="Ambiente">
                 <div class="reel-overlay"><i class="fas fa-users reel-icon"></i></div>
             </div>
             <div class="reel-item">
