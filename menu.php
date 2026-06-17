@@ -9,6 +9,127 @@
             <h1>NUESTRO <span class="text-gold">MENÚ</span></h1>
             <p>Sabores auténticos creados con pasión</p>
             <p style="font-size: 0.9rem; margin-top: 5px; opacity: 0.7;">En caso de requerir factura se aplicara un cargo del 16% de IVA</p>
+
+
+            <div class="menu-container">
+            <fieldset class="tabla-ingredientes">
+                <legend>INGREDIENTES</legend>
+                
+                <div class="grid-layout ingredientes border-bottom">
+                <div class="item">Pepperoni</div>
+                <div class="item">Champiñón</div>
+                <div class="item">Jalapeño</div>
+                <div class="item">Salchicha Italiana</div>
+                <div class="item">Piña</div>
+                <div class="item">Chile Morrón</div>
+                <div class="item">Jamón de Pavo</div>
+                <div class="item">Aceituna</div>
+                <div class="item">Cebolla</div>
+                </div>
+                
+                <div class="grid-layout extras">
+                <div class="extra-item">
+                    <span>Tocino<br><strong>EXTRA</strong></span>
+                    <span class="precio">$30</span>
+                </div>
+                <div class="extra-item">
+                    <span>Queso<br><strong>EXTRA</strong></span>
+                    <span class="precio">$35</span>
+                </div>
+                </div>
+                
+            </fieldset>
+            </div>
+
+            <style>
+            .menu-container {
+                background-color: #000000;
+                color: #ffffff;
+                font-family: sans-serif;
+                padding: 10px; /* Reducido para móvil */
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                box-sizing: border-box;
+            }
+            
+            .tabla-ingredientes {
+                border: 2px double #ffffff;
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                max-width: 430px; /* Límite para iPhone Pro Max */
+            }
+            
+            .tabla-ingredientes legend {
+                font-family: "Arial Black", impact, sans-serif;
+                font-size: 16px;
+                letter-spacing: 1px;
+                text-align: center;
+                padding: 0 10px;
+            }
+            
+            /* Sistema Grid para simular la tabla */
+            .grid-layout {
+                display: grid;
+                background-color: #ffffff; /* Color de las líneas divisorias */
+                gap: 1px; /* Grosor de las líneas divisorias */
+            }
+            
+            .border-bottom {
+                border-bottom: 1px solid #ffffff;
+            }
+            
+            .ingredientes {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .item {
+                background-color: #000000; /* Fondo real del menú */
+                padding: 8px 2px;
+                text-align: center;
+                font-size: 11px; /* Fuente pequeña para evitar saltos de línea */
+                font-weight: bold;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .extras {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .extra-item {
+                background-color: #000000;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+                padding: 10px 5px;
+                font-size: 11px;
+                text-align: left;
+                line-height: 1.1;
+            }
+            
+            .extra-item strong {
+                font-size: 14px;
+                font-family: "Arial Black", impact, sans-serif;
+            }
+            
+            .precio {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid #ffffff;
+                border-radius: 50%;
+                width: 32px;
+                height: 32px;
+                font-weight: bold;
+                font-size: 12px;
+            }
+            </style>
+
+
         </div>
     </header>
 
@@ -26,6 +147,53 @@
                 <button class="filter-btn" data-filter="Postres">Postres</button>
                 <button class="filter-btn" data-filter="Bebidas sin alcohol">Bebidas sin alcohol</button>
 
+            </div>
+
+            <!-- BLOQUE DE SALSAS WINGS & BONELESS -->
+            <div id="wings-salsas-block" class="wings-salsas-hidden">
+                <div class="menu-container">
+                  <fieldset class="tabla-salsas">
+                    <legend>SALSAS</legend>
+                    <div class="grid-layout salsas">
+                      
+                      <div class="item-salsa">
+                        <span class="salsa-texto">Salsa<br><strong>BBQ</strong></span>
+                      </div>
+                      
+                      <div class="item-salsa">
+                        <span class="salsa-texto">Salsa<br><strong>LIMÓN<br>PIMIENTA</strong></span>
+                      </div>
+                      
+                      <div class="item-salsa">
+                        <span class="salsa-texto">Salsa<br><strong>BUFFALO</strong></span>
+                        <div class="nivel-picante">
+                          <svg class="flame flame-yellow" viewBox="0 0 24 24"><path d="M12 2c0 0-4 4-4 8s4 12 4 12 4-8 4-12-4-8-4-8z"/></svg>
+                          <svg class="flame flame-orange" viewBox="0 0 24 24"><path d="M12 2c0 0-4 4-4 8s4 12 4 12 4-8 4-12-4-8-4-8z"/></svg>
+                        </div>
+                      </div>
+                      
+                      <div class="item-salsa">
+                        <span class="salsa-texto">Salsa<br><strong>CHIPOTLE</strong></span>
+                        <div class="nivel-picante">
+                          <svg class="flame flame-yellow" viewBox="0 0 24 24"><path d="M12 2c0 0-4 4-4 8s4 12 4 12 4-8 4-12-4-8-4-8z"/></svg>
+                          <svg class="flame flame-orange" viewBox="0 0 24 24"><path d="M12 2c0 0-4 4-4 8s4 12 4 12 4-8 4-12-4-8-4-8z"/></svg>
+                          <svg class="flame flame-red" viewBox="0 0 24 24"><path d="M12 2c0 0-4 4-4 8s4 12 4 12 4-8 4-12-4-8-4-8z"/></svg>
+                        </div>
+                      </div>
+                      
+                      <div class="item-salsa">
+                        <span class="salsa-texto">Salsa<br><strong>MANGO<br>HABANERO</strong></span>
+                        <div class="nivel-picante">
+                          <svg class="flame flame-yellow" viewBox="0 0 24 24"><path d="M12 2c0 0-4 4-4 8s4 12 4 12 4-8 4-12-4-8-4-8z"/></svg>
+                          <svg class="flame flame-orange" viewBox="0 0 24 24"><path d="M12 2c0 0-4 4-4 8s4 12 4 12 4-8 4-12-4-8-4-8z"/></svg>
+                          <svg class="flame flame-red" viewBox="0 0 24 24"><path d="M12 2c0 0-4 4-4 8s4 12 4 12 4-8 4-12-4-8-4-8z"/></svg>
+                          <svg class="flame flame-dark" viewBox="0 0 24 24"><path d="M12 2c0 0-4 4-4 8s4 12 4 12 4-8 4-12-4-8-4-8z"/></svg>
+                        </div>
+                      </div>
+
+                    </div>
+                  </fieldset>
+                </div>
             </div>
 
             <div class="menu-grid">
@@ -941,7 +1109,7 @@
                     <div class="menu-item fade-in-up" data-category="Bebidas sin alcohol">
                         <div class="menu-img">
                             <img src="imgmenu/pizzasarte/cafefrio.jpeg" alt="Café Frío">
-                            <span class="price">$50</span>
+                            <span class="price">$65</span>
                         </div>
                         <div class="menu-info">
                             <h3>CAFÉ FRÍO</h3>

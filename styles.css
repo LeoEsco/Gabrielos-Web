@@ -531,6 +531,105 @@ footer { background-color: #111; padding: 40px 0; text-align: center; border-top
 .reel-item:hover .reel-icon { transform: translateY(0); }
 .reel-item:hover img { filter: grayscale(0%); }
 
+/* --- WINGS SALSAS BLOCK --- */
+.wings-salsas-hidden {
+    display: none;
+}
+
+.wings-salsas-visible {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+.tabla-salsas {
+    border: 2px double #ffffff;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 430px;
+}
+
+.tabla-salsas legend {
+    font-family: "Arial Black", impact, sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 0 10px;
+    color: var(--white);
+}
+
+.salsas {
+    grid-template-columns: 1fr;
+}
+
+.item-salsa {
+    background-color: #000000;
+    padding: 12px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    border-right: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+.item-salsa:last-child {
+    border-right: none;
+    border-bottom: none;
+}
+
+.salsa-texto {
+    font-size: 11px;
+    text-align: left;
+    line-height: 1.1;
+    color: var(--white);
+}
+
+.salsa-texto strong {
+    font-size: 14px;
+    font-family: "Arial Black", impact, sans-serif;
+    text-transform: uppercase;
+}
+
+.nivel-picante {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    padding: 4px 8px;
+    gap: 3px;
+    background-color: #000000;
+    flex-shrink: 0;
+}
+
+.flame {
+    width: 16px;
+    height: 16px;
+}
+
+.flame-yellow { fill: #FFD700; }
+.flame-orange { fill: #FFA500; }
+.flame-red { fill: #FF4500; }
+.flame-dark { fill: #8B0000; }
+
+@media (min-width: 600px) {
+    .tabla-salsas {
+        max-width: 1000px;
+    }
+    .salsas {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .item-salsa {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        border: 1px solid #ffffff;
+    }
+    .salsa-texto {
+        text-align: center;
+    }
+}
+
 /* --- MOBILE FIRST ADJUSTMENTS --- */
 @media (max-width: 768px) {
     .reel-item {

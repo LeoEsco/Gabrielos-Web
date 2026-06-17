@@ -63,6 +63,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 const filterValue = btn.getAttribute('data-filter');
                 applyFilter(filterValue);
+                
+                // Mostrar/ocultar bloque de salsas para Wings & Boneless
+                const wingsBlock = document.getElementById('wings-salsas-block');
+                if(wingsBlock) {
+                    if(filterValue === 'Wings & Boneless') {
+                        wingsBlock.classList.remove('wings-salsas-hidden');
+                        wingsBlock.classList.add('wings-salsas-visible');
+                    } else {
+                        wingsBlock.classList.remove('wings-salsas-visible');
+                        wingsBlock.classList.add('wings-salsas-hidden');
+                    }
+                }
             });
         });
     }
