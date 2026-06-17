@@ -1,10 +1,46 @@
-/* --- Variables y Reset --- */
+/* ==========================================================================
+   STYLES.CSS — GABRIELO'S PIZZERIA
+   Paleta: Negro / Dorado (#d59945)
+   Fuentes: Oswald (títulos) + Roboto (cuerpo)
+   
+   ÍNDICE:
+   1. Variables y Reset
+   2. Tipografía base
+   3. Utilidades
+   4. Botones
+   5. Barra de anuncios (Marquee)
+   6. Navegación (Navbar + Hamburguesa)
+   7. Hero Section (Inicio)
+   8. Headers internos (Páginas secundarias)
+   9. Secciones de contenido (Grid, About, Historia)
+   10. Stats (Estadísticas)
+   11. CTA (Call to Action)
+   12. Menú y Filtros
+   13. Promociones
+   14. Contacto y Formulario
+   15. Reseñas / Opinión (CTA Google)
+   16. Experiencias — Hero Card destacada
+   17. Experiencias — Masonry Grid + Tarjetas sociales
+   18. Galería Reel (Auto-scroll)
+   19. Wings & Salsas (Tabla)
+   20. Footer
+   21. Animaciones (Scroll reveal)
+   22. Responsive — Tablet (max-width: 900px)
+   23. Responsive — Móvil (max-width: 768px)
+   24. Responsive — Móvil pequeño (max-width: 600px)
+   ========================================================================== */
+
+
+/* ==========================================================================
+   1. VARIABLES Y RESET
+   ========================================================================== */
+
 :root {
     --bg-color: #000000;
     --bg-light: #121212;
     --text-color: #b4b4b4;
-    --accent-color: #d59945; /* Dorado */
-    --accent-hover: #b88235;
+    --accent-color: #d59945;      /* Dorado principal */
+    --accent-hover: #b88235;      /* Dorado oscuro (hover) */
     --white: #ffffff;
     --dark-overlay: rgba(0, 0, 0, 0.7);
     --font-head: 'Oswald', sans-serif;
@@ -12,7 +48,16 @@
     --transition: all 0.3s ease;
 }
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Previene scroll horizontal en móviles reales */
+html {
+    overflow-x: hidden;
+}
 
 body {
     background-color: var(--bg-color);
@@ -21,6 +66,11 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
 }
+
+
+/* ==========================================================================
+   2. TIPOGRAFÍA BASE
+   ========================================================================== */
 
 h1, h2, h3 {
     font-family: var(--font-head);
@@ -33,7 +83,58 @@ a { text-decoration: none; color: inherit; }
 ul { list-style: none; }
 img { width: 100%; display: block; }
 
-/* --- BARRA DE ANUNCIOS (MARQUEE) --- */
+
+/* ==========================================================================
+   3. UTILIDADES
+   ========================================================================== */
+
+.container       { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+.text-gold       { color: var(--accent-color); }
+.bg-black        { background-color: var(--bg-color); }
+.bg-dark-grey    { background-color: var(--bg-light); }
+.section-padding { padding: 80px 0; }
+.text-center     { text-align: center; }
+
+/* Espaciadores verticales (usados en tarjetas de experiencias) */
+.spacer-s { margin-bottom: 10px; }
+.spacer-m { margin-bottom: 30px; }
+.spacer-l { margin-bottom: 50px; }
+
+
+/* ==========================================================================
+   4. BOTONES
+   ========================================================================== */
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    font-family: var(--font-head);
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.btn-primary       { background-color: var(--accent-color); color: var(--bg-color); }
+.btn-primary:hover { background-color: var(--accent-hover); }
+
+.btn-outline       { border-color: var(--white); color: var(--white); margin-left: 10px; }
+.btn-outline:hover { background-color: var(--white); color: var(--bg-color); }
+
+.btn-block { width: 100%; text-align: center; }
+
+/* Botón tipo link (usado en tarjetas de promociones) */
+.btn-link       { color: var(--accent-color); font-weight: 700; text-transform: uppercase; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 8px; transition: var(--transition); margin-top: auto; }
+.btn-link:hover { color: var(--accent-hover); padding-left: 5px; }
+
+
+/* ==========================================================================
+   5. BARRA DE ANUNCIOS (MARQUEE)
+   - Fija en la parte superior del viewport (z-index: 2000)
+   - Altura: 35px — la navbar se posiciona justo debajo (top: 35px)
+   ========================================================================== */
+
 .announcement-bar {
     position: fixed;
     top: 0;
@@ -61,8 +162,9 @@ img { width: 100%; display: block; }
     width: max-content;
 }
 
+/* Pausa el marquee al pasar el mouse */
 .announcement-bar:hover .marquee-track {
-    animation-play-state: paused; 
+    animation-play-state: paused;
 }
 
 .marquee-content {
@@ -85,39 +187,19 @@ img { width: 100%; display: block; }
 }
 
 @keyframes scroll-left {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); } 
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
 }
 
-/* --- Utilidades --- */
-.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-.text-gold { color: var(--accent-color); }
-.bg-black { background-color: var(--bg-color); }
-.bg-dark-grey { background-color: var(--bg-light); }
-.section-padding { padding: 80px 0; }
-.text-center { text-align: center; }
 
-/* --- Botones --- */
-.btn {
-    display: inline-block;
-    padding: 12px 30px;
-    font-family: var(--font-head);
-    font-weight: 700;
-    text-transform: uppercase;
-    border: 2px solid transparent;
-    transition: var(--transition);
-    cursor: pointer;
-}
+/* ==========================================================================
+   6. NAVEGACIÓN (NAVBAR + HAMBURGUESA)
+   - Fija debajo de la barra de anuncios (top: 35px, z-index: 1000)
+   - En móvil: el menú hamburguesa despliega .nav-links a pantalla completa
+   ========================================================================== */
 
-.btn-primary { background-color: var(--accent-color); color: var(--bg-color); }
-.btn-primary:hover { background-color: var(--accent-hover); }
-
-.btn-outline { border-color: var(--white); color: var(--white); margin-left: 10px; }
-.btn-outline:hover { background-color: var(--white); color: var(--bg-color); }
-
-/* --- Navegación --- */
 .navbar {
-    position: sticky;
+    position: fixed;
     top: 35px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.95);
@@ -127,142 +209,281 @@ img { width: 100%; display: block; }
 }
 
 .nav-container { display: flex; justify-content: space-between; align-items: center; }
-.logo a { font-family: var(--font-head); font-size: 1.5rem; color: var(--white); font-weight: 700; }
+
+/* Logo */
+.logo a    { font-family: var(--font-head); font-size: 1.5rem; color: var(--white); font-weight: 700; }
 .logo span { color: var(--accent-color); }
 
-.nav-links { display: flex; gap: 30px; }
+/* Links de navegación (desktop) */
+.nav-links   { display: flex; gap: 30px; }
 .nav-links a { font-size: 0.9rem; font-weight: 500; text-transform: uppercase; transition: var(--transition); }
-.nav-links a:hover, .nav-links a.active { color: var(--accent-color); }
+.nav-links a:hover,
+.nav-links a.active { color: var(--accent-color); }
 
+/* Ícono hamburguesa — oculto en desktop, visible en móvil */
 .hamburger { display: none; font-size: 1.5rem; color: var(--white); cursor: pointer; }
 
-/* --- Hero Section & General Headers --- */
 
+/* ==========================================================================
+   7. HERO SECTION (PÁGINA DE INICIO)
+   - Ocupa 80vh con imagen de fondo y overlay oscuro
+   - Contenido centrado vertical y horizontalmente
+   ========================================================================== */
 
 .hero {
     height: 80vh;
     background: url('imgmain/img\ hero.png') no-repeat center center/cover;
-    position: relative; display: flex; align-items: center; justify-content: center; text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-.overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: var(--dark-overlay); }
-.hero-content { position: relative; z-index: 1; max-width: 800px; padding: 0 20px; }
-.hero-content h1 { font-size: 4rem; margin-bottom: 20px; }
-.hero-content p { font-size: 1.2rem; margin-bottom: 30px; color: #ddd; }
+.overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: var(--dark-overlay);
+}
 
-/* Headers Internos */
+.hero-content    { position: relative; z-index: 1; max-width: 800px; padding: 0 20px; }
+.hero-content h1 { font-size: 4rem; margin-bottom: 20px; }
+.hero-content p  { font-size: 1.2rem; margin-bottom: 30px; color: #ddd; }
+
+
+/* ==========================================================================
+   8. HEADERS INTERNOS (MENÚ, CONTACTO, EXPERIENCIAS)
+   - margin-top: 130px compensa los elementos fijos:
+     barra de anuncios (35px) + navbar (~60px) + espacio extra
+   - Se ajusta a 105px en móvil (ver sección responsive)
+   ========================================================================== */
+
 .page-header {
     height: 50vh;
-    background-position: center center; background-size: cover; background-repeat: no-repeat;
-    position: relative; display: flex; align-items: center; justify-content: center; text-align: center;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     margin-top: 130px;
 }
-.header-content { position: relative; z-index: 1; }
+
+.header-content    { position: relative; z-index: 1; }
 .header-content h1 { font-size: 3.5rem; }
 
-/* --- About Grid --- */
+
+/* ==========================================================================
+   9. SECCIONES DE CONTENIDO (GRID, ABOUT, HISTORIA)
+   ========================================================================== */
+
+/* Grid de 2 columnas (usado en About, Eventos, Promos del index) */
 .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
-.section-title { font-size: 2.5rem; margin-bottom: 20px; border-left: 4px solid var(--accent-color); padding-left: 15px; }
+
+/* Títulos de sección */
+.section-title        { font-size: 2.5rem; margin-bottom: 20px; border-left: 4px solid var(--accent-color); padding-left: 15px; }
 .section-title-center { font-size: 2.5rem; margin-bottom: 30px; display: inline-block; border-bottom: 3px solid var(--accent-color); padding-bottom: 10px; }
 
-.feature-list { margin-top: 20px; }
+/* Lista de características (About) */
+.feature-list    { margin-top: 20px; }
 .feature-list li { margin-bottom: 10px; font-size: 1.1rem; }
-.feature-list i { color: var(--accent-color); margin-right: 10px; width: 25px; }
-.image-column img { border-radius: 5px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); filter: grayscale(20%); transition: var(--transition); }
+.feature-list i  { color: var(--accent-color); margin-right: 10px; width: 25px; }
+
+/* Columna de imagen con efecto grayscale */
+.image-column img       { border-radius: 5px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); filter: grayscale(20%); transition: var(--transition); }
 .image-column img:hover { filter: grayscale(0%); }
 
-/* --- Historia Banner --- */
+/* Banner de historia */
 .history-banner-container { margin: 30px auto; max-width: 1000px; }
-.history-banner { width: 100%; height: auto; max-height: 400px; object-fit: cover; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
-.history-section p { max-width: 800px; margin: 0 auto 20px auto; font-size: 1.1rem; color: #ccc; }
+.history-banner           { width: 100%; height: auto; max-height: 400px; object-fit: cover; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+.history-section p        { max-width: 800px; margin: 0 auto 20px auto; font-size: 1.1rem; color: #ccc; }
 
-/* --- Stats Section --- */
+
+/* ==========================================================================
+   10. STATS (ESTADÍSTICAS)
+   ========================================================================== */
+
 .stats-heading { text-align: center; font-size: 1.8rem; margin-bottom: 50px; color: var(--text-color); }
-.stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; justify-content: center; }
-.stat-box { background-color: var(--accent-color); padding: 40px 20px; text-align: center; transition: var(--transition); display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.stats-grid    { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; justify-content: center; }
+
+.stat-box       { background-color: var(--accent-color); padding: 40px 20px; text-align: center; transition: var(--transition); display: flex; flex-direction: column; align-items: center; justify-content: center; }
 .stat-box:hover { transform: translateY(-10px); background-color: var(--accent-hover); }
-.stat-box i { font-size: 3rem; color: #000; margin-bottom: 20px; }
-.stat-number { font-family: var(--font-head); font-size: 3rem; font-weight: 700; color: #000; line-height: 1; margin-bottom: 10px; }
-.stat-label { font-size: 1.1rem; font-weight: 700; color: #000; text-transform: uppercase; }
+.stat-box i     { font-size: 3rem; color: #000; margin-bottom: 20px; }
+.stat-number    { font-family: var(--font-head); font-size: 3rem; font-weight: 700; color: #000; line-height: 1; margin-bottom: 10px; }
+.stat-label     { font-size: 1.1rem; font-weight: 700; color: #000; text-transform: uppercase; }
 
-/* --- CTA Section --- */
+
+/* ==========================================================================
+   11. CTA (CALL TO ACTION)
+   - NOTA: background-attachment: fixed no funciona en iOS/Android.
+     En móvil el efecto parallax simplemente no se aplica.
+   ========================================================================== */
+
 .cta-section {
-    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1571997478779-2ad5117cfcdd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
-    padding: 100px 0; text-align: center; background-attachment: fixed;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
+                url('https://images.unsplash.com/photo-1571997478779-2ad5117cfcdd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
+    padding: 100px 0;
+    text-align: center;
+    background-attachment: fixed;
 }
-.cta-content h2 { margin-bottom: 15px; font-size: 3rem;}
-.cta-content p { margin-bottom: 30px; font-size: 1.2rem;}
 
-/* --- Menu & Filters --- */
+.cta-content h2 { margin-bottom: 15px; font-size: 3rem; }
+.cta-content p  { margin-bottom: 30px; font-size: 1.2rem; }
 
+
+/* ==========================================================================
+   12. MENÚ Y FILTROS
+   ========================================================================== */
+
+/* Botones de filtro de categorías */
 .menu-filters { display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; margin-bottom: 50px; margin-top: 20px; }
-.filter-btn { background: transparent; border: 2px solid var(--accent-color); color: var(--white); padding: 10px 25px; font-family: var(--font-head); font-size: 1rem; text-transform: uppercase; cursor: pointer; transition: var(--transition); }
-.filter-btn:hover, .filter-btn.active { background-color: var(--accent-color); color: var(--bg-color); }
 
-.menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;}
-.menu-item { background-color: var(--bg-light); border-radius: 8px; overflow: hidden; transition: var(--transition); box-shadow: 0 5px 15px rgba(0,0,0,0.2); animation: fadeIn 0.5s ease; }
-.menu-item:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.4); }
-.menu-img { position: relative; height: 250px; overflow: hidden; }
-.menu-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+.filter-btn {
+    background: transparent;
+    border: 2px solid var(--accent-color);
+    color: var(--white);
+    padding: 10px 25px;
+    font-family: var(--font-head);
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.filter-btn:hover,
+.filter-btn.active { background-color: var(--accent-color); color: var(--bg-color); }
+
+/* Grid de platillos */
+.menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
+
+/* Tarjeta de platillo */
+.menu-item       { background-color: var(--bg-light); border-radius: 8px; overflow: hidden; transition: var(--transition); box-shadow: 0 5px 15px rgba(0,0,0,0.2); animation: fadeIn 0.5s ease; }
+.menu-item:hover  { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.4); }
+.menu-item.hide   { display: none; }
+
+/* Imagen del platillo */
+.menu-img                    { position: relative; height: 250px; overflow: hidden; }
+.menu-img img                { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
 .menu-item:hover .menu-img img { transform: scale(1.1); }
-.price { position: absolute; bottom: 15px; right: 15px; background-color: var(--accent-color); color: #000; padding: 5px 15px; font-family: var(--font-head); font-weight: 700; font-size: 1.2rem; border-radius: 4px; }
-.menu-info { padding: 25px; text-align: center; }
-.menu-info h3 { color: var(--accent-color); margin-bottom: 10px; font-size: 1.4rem; }
-.menu-info p { font-size: 0.95rem; color: #999; }
-.menu-item.hide { display: none; }
-@keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
 
-/* --- Promociones --- */
+/* Etiqueta de precio */
+.price { position: absolute; bottom: 15px; right: 15px; background-color: var(--accent-color); color: #000; padding: 5px 15px; font-family: var(--font-head); font-weight: 700; font-size: 1.2rem; border-radius: 4px; }
+
+/* Info del platillo */
+.menu-info    { padding: 25px; text-align: center; }
+.menu-info h3 { color: var(--accent-color); margin-bottom: 10px; font-size: 1.4rem; }
+.menu-info p  { font-size: 0.95rem; color: #999; }
+
+
+/* ==========================================================================
+   13. PROMOCIONES
+   ========================================================================== */
+
+/* Header de la página de promos */
 .promo-header { background-image: url('https://images.unsplash.com/photo-1571407970349-bc16e327c1c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80'); }
+
+/* Promo destacada (banner grande con timer) */
 .featured-promo {
-    background: linear-gradient(135deg, #222 0%, #111 100%); border: 2px solid var(--accent-color); border-radius: 10px;
-    padding: 40px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 30px; position: relative; overflow: hidden;
+    background: linear-gradient(135deg, #222 0%, #111 100%);
+    border: 2px solid var(--accent-color);
+    border-radius: 10px;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    position: relative;
+    overflow: hidden;
 }
 .featured-promo::before { content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(213, 153, 69, 0.1) 0%, transparent 70%); pointer-events: none; }
-.promo-text { flex: 1; min-width: 300px; z-index: 2; }
-.badge { background-color: var(--accent-color); color: #000; padding: 5px 10px; font-weight: bold; font-size: 0.8rem; border-radius: 4px; display: inline-block; margin-bottom: 15px; }
+
+.promo-text    { flex: 1; min-width: 300px; z-index: 2; }
 .promo-text h2 { font-size: 2.5rem; margin-bottom: 10px; }
+
+.badge { background-color: var(--accent-color); color: #000; padding: 5px 10px; font-weight: bold; font-size: 0.8rem; border-radius: 4px; display: inline-block; margin-bottom: 15px; }
+
+/* Precio viejo/nuevo */
 .price-tag { margin: 20px 0; font-family: var(--font-head); }
 .old-price { text-decoration: line-through; color: #777; font-size: 1.5rem; margin-right: 15px; }
 .new-price { color: var(--white); font-size: 2.5rem; font-weight: bold; }
-.promo-timer { text-align: center; background: rgba(0,0,0,0.5); padding: 20px; border-radius: 8px; border: 1px solid #333; z-index: 2; }
+
+/* Timer de cuenta regresiva */
+.promo-timer   { text-align: center; background: rgba(0,0,0,0.5); padding: 20px; border-radius: 8px; border: 1px solid #333; z-index: 2; }
 .promo-timer p { text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem; margin-bottom: 10px; color: var(--accent-color); }
+
 .countdown-container { display: flex; gap: 15px; }
-.time-box { background-color: #333; width: 70px; height: 70px; border-radius: 5px; display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 0.8rem; color: #aaa; }
+.time-box      { background-color: #333; width: 70px; height: 70px; border-radius: 5px; display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 0.8rem; color: #aaa; }
 .time-box span { font-size: 1.8rem; font-weight: bold; color: var(--white); font-family: var(--font-head); }
 
+/* Grid de tarjetas de promoción */
 .promo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; margin-bottom: 40px; }
-.promo-card { background-color: #1a1a1a; border-radius: 8px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.3); transition: var(--transition); display: flex; flex-direction: column; }
+
+/* Tarjeta de promoción individual */
+.promo-card       { background-color: #1a1a1a; border-radius: 8px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.3); transition: var(--transition); display: flex; flex-direction: column; }
 .promo-card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(213, 153, 69, 0.15); }
-.card-img { position: relative; height: 220px; width: 100%; }
-.card-img img { height: 100%; width: 100%; object-fit: cover; transition: transform 0.5s ease; }
+
+.card-img                       { position: relative; height: 220px; width: 100%; }
+.card-img img                   { height: 100%; width: 100%; object-fit: cover; transition: transform 0.5s ease; }
 .promo-card:hover .card-img img { transform: scale(1.05); }
 .card-date { position: absolute; top: 15px; right: 15px; background-color: var(--accent-color); color: #000; padding: 5px 12px; font-weight: 700; font-size: 0.8rem; text-transform: uppercase; font-family: var(--font-head); border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.5); }
-.card-body { padding: 30px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; }
+
+.card-body    { padding: 30px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; }
 .card-body h3 { margin-bottom: 15px; font-size: 1.5rem; color: var(--white); border-bottom: 2px solid #333; padding-bottom: 10px; }
-.card-body p { font-size: 1rem; color: #ccc; margin-bottom: 25px; line-height: 1.5; }
-.btn-link { color: var(--accent-color); font-weight: 700; text-transform: uppercase; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 8px; transition: var(--transition); margin-top: auto; }
-.btn-link:hover { color: var(--accent-hover); padding-left: 5px; }
+.card-body p  { font-size: 1rem; color: #ccc; margin-bottom: 25px; line-height: 1.5; }
 
-/* --- Contacto --- */
+
+/* ==========================================================================
+   14. CONTACTO Y FORMULARIO
+   ========================================================================== */
+
 .contact-header { background-image: url('imgmain/cont.jpeg'); }
-.contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; text-align: center; }
-.contact-box { background-color: var(--bg-light); padding: 40px 20px; border-radius: 8px; border: 1px solid #222; transition: var(--transition); }
-.contact-box:hover { border-color: var(--accent-color); transform: translateY(-5px); }
-.icon-circle { width: 70px; height: 70px; border: 2px solid var(--accent-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; color: var(--accent-color); font-size: 1.5rem; transition: var(--transition); }
-.contact-box:hover .icon-circle { background-color: var(--accent-color); color: var(--bg-color); }
-.contact-box h3 { margin-bottom: 15px; font-size: 1.3rem; color: var(--white); }
-.contact-box p { color: #ccc; margin-bottom: 5px; }
-.map-section { width: 100%; line-height: 0; filter: grayscale(80%); transition: var(--transition); }
-.map-section:hover { filter: grayscale(0%); }
-.form-container { max-width: 700px; margin: 0 auto; }
-.form-header { text-align: center; margin-bottom: 40px; }
-.contact-form { display: flex; flex-direction: column; gap: 20px; }
-.input-group input, .input-group select, .input-group textarea { width: 100%; padding: 15px; background-color: var(--bg-color); border: 1px solid #333; color: var(--white); font-family: var(--font-body); font-size: 1rem; outline: none; transition: var(--transition); }
-.input-group input:focus, .input-group select:focus, .input-group textarea:focus { border-color: var(--accent-color); }
-.btn-block { width: 100%; text-align: center; }
 
-/* --- Sección de Reseñas / Opinión --- */
+/* Grid de cajas de contacto (teléfono, email, dirección) */
+.contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; text-align: center; }
+
+.contact-box       { background-color: var(--bg-light); padding: 40px 20px; border-radius: 8px; border: 1px solid #222; transition: var(--transition); }
+.contact-box:hover { border-color: var(--accent-color); transform: translateY(-5px); }
+.contact-box h3    { margin-bottom: 15px; font-size: 1.3rem; color: var(--white); }
+.contact-box p     { color: #ccc; margin-bottom: 5px; }
+
+/* Ícono circular dentro de las cajas */
+.icon-circle                      { width: 70px; height: 70px; border: 2px solid var(--accent-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; color: var(--accent-color); font-size: 1.5rem; transition: var(--transition); }
+.contact-box:hover .icon-circle   { background-color: var(--accent-color); color: var(--bg-color); }
+
+/* Mapa embebido */
+.map-section       { width: 100%; line-height: 0; filter: grayscale(80%); transition: var(--transition); }
+.map-section:hover { filter: grayscale(0%); }
+
+/* Formulario */
+.form-container { max-width: 700px; margin: 0 auto; }
+.form-header    { text-align: center; margin-bottom: 40px; }
+.contact-form   { display: flex; flex-direction: column; gap: 20px; }
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--bg-color);
+    border: 1px solid #333;
+    color: var(--white);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    outline: none;
+    transition: var(--transition);
+}
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus { border-color: var(--accent-color); }
+
+
+/* ==========================================================================
+   15. RESEÑAS / OPINIÓN (CTA PARA DEJAR RESEÑA EN GOOGLE)
+   ========================================================================== */
+
 .review-container {
     max-width: 700px;
     margin: 0 auto;
@@ -301,21 +522,14 @@ img { width: 100%; display: block; }
     font-size: 1.3rem;
 }
 
-@media (max-width: 768px) {
-    .review-container {
-        padding: 40px 20px;
-    }
-    .review-btn {
-        width: 100%;
-        padding: 15px 20px;
-        font-size: 1rem;
-    }
-}
 
-/* --- EXPERIENCIAS (UPDATED) --- */
+/* ==========================================================================
+   16. EXPERIENCIAS — HERO CARD DESTACADA (RESEÑA PRINCIPAL)
+   - Layout horizontal en desktop, se invierte a column-reverse en tablet
+   ========================================================================== */
+
 .experiences-header { background-image: url('imgmain/exp.jpeg'); }
 
-/* Reseña Hero (Destacada Horizontal) */
 .hero-card {
     background-color: #1a1a1a;
     border: 1px solid var(--accent-color);
@@ -328,6 +542,7 @@ img { width: 100%; display: block; }
     min-height: 380px;
 }
 
+/* Columna izquierda: texto de la reseña */
 .hero-content-left {
     flex: 1;
     padding: 40px;
@@ -336,66 +551,35 @@ img { width: 100%; display: block; }
     justify-content: center;
 }
 
-.hero-content-left .review-text {
-    font-size: 1.15rem;
-    color: #ffffff;
-    margin: 20px 0;
-    font-style: italic;
-    line-height: 1.5;
-}
+.hero-content-left .review-text { font-size: 1.15rem; color: #ffffff; margin: 20px 0; font-style: italic; line-height: 1.5; }
+.hero-content-left .username    { font-size: 1.1rem; color: #ffffff; }
 
-.hero-content-left .username {
-    font-size: 1.1rem;
-    color: #ffffff;
-}
+/* Columna derecha: imágenes */
+.hero-images-right { flex-basis: 45%; display: flex; gap: 4px; }
+.hero-img-col      { flex: 1; overflow: hidden; }
+.hero-img-col img  { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
 
-.hero-images-right {
-    flex-basis: 45%;
-    display: flex;
-    gap: 4px;
-}
+.hero-card:hover .hero-img-col img { transform: scale(1.05); }
 
-.hero-img-col {
-    flex: 1;
-    overflow: hidden;
-}
 
-.hero-img-col img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-}
+/* ==========================================================================
+   17. EXPERIENCIAS — MASONRY GRID + TARJETAS SOCIALES
+   ========================================================================== */
 
-.hero-card:hover .hero-img-col img {
-    transform: scale(1.05);
-}
-
-@media (max-width: 900px) {
-    .hero-card { flex-direction: column-reverse; }
-    .hero-images-right { height: 300px; flex-basis: auto; width: 100%; margin-bottom: 0px; }
-    .hero-content-left { padding: 20px; padding-top: 15px; }
-    .hero-content-left .review-text { font-size: 1rem; }
-    .hero-content-left .username { font-size: 1rem; }
-}
-
-/* Masonry Layout */
+/* Layout masonry con CSS columns */
 .masonry-grid {
     column-count: 3;
     column-gap: 25px;
     width: 100%;
 }
 
-@media (max-width: 900px) { .masonry-grid { column-count: 2; } }
-@media (max-width: 600px) { .masonry-grid { column-count: 1; } }
-
-/* Tarjetas Verticales */
+/* Tarjeta tipo red social */
 .social-card {
     background-color: #1a1a1a;
     border-radius: 12px;
     overflow: hidden;
     margin-bottom: 25px;
-    break-inside: avoid;
+    break-inside: avoid;       /* Evita que se corte entre columnas */
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     border: 1px solid #333;
     transition: transform 0.3s ease;
@@ -404,53 +588,35 @@ img { width: 100%; display: block; }
 .social-card:hover { border-color: #444; }
 
 .card-image img { width: 100%; display: block; }
-.card-content { padding: 20px; }
+.card-content   { padding: 20px; }
 
-.spacer-s { margin-bottom: 10px; }
-.spacer-m { margin-bottom: 30px; }
-.spacer-l { margin-bottom: 50px; }
-
-.user-header { display: flex; align-items: center; margin-bottom: 15px; }
+/* Header de usuario (avatar + nombre + fecha) */
+.user-header   { display: flex; align-items: center; margin-bottom: 15px; }
 .avatar-circle { width: 40px; height: 40px; background-color: var(--accent-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; margin-right: 12px; font-size: 1.1rem; }
-.user-info { display: flex; flex-direction: column; }
-.username { font-weight: 700; color: var(--white); font-size: 0.95rem; }
-.time-ago { font-size: 0.75rem; color: #777; }
-.review-text { font-size: 0.95rem; color: #ccc; line-height: 1.5; margin-bottom: 15px; font-style: italic; }
+.user-info     { display: flex; flex-direction: column; }
+.username      { font-weight: 700; color: var(--white); font-size: 0.95rem; }
+.time-ago      { font-size: 0.75rem; color: #777; }
+
+/* Texto de reseña y estrellas */
+.review-text  { font-size: 0.95rem; color: #ccc; line-height: 1.5; margin-bottom: 15px; font-style: italic; }
 .rating-stars { color: var(--accent-color); font-size: 0.9rem; margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px solid #333; }
+
+/* Acciones (like + compartir) */
 .card-actions { display: flex; justify-content: space-between; align-items: center; }
-.like-btn { background: none; border: none; color: #aaa; cursor: pointer; font-size: 1.1rem; display: flex; align-items: center; gap: 8px; transition: color 0.3s; font-family: var(--font-body); }
+
+.like-btn       { background: none; border: none; color: #aaa; cursor: pointer; font-size: 1.1rem; display: flex; align-items: center; gap: 8px; transition: color 0.3s; font-family: var(--font-body); }
 .like-btn:hover { color: var(--white); }
 .like-btn.liked { color: #ed4956; }
 .like-btn.liked i { animation: pop 0.3s linear 1; font-weight: 900; }
-.share-icon { color: #aaa; cursor: pointer; transition: color 0.3s; }
+
+.share-icon       { color: #aaa; cursor: pointer; transition: color 0.3s; }
 .share-icon:hover { color: var(--white); }
-@keyframes pop { 0% { transform: scale(1); } 50% { transform: scale(1.3); } 100% { transform: scale(1); } }
 
-/* Footer */
-footer { background-color: #111; padding: 40px 0; text-align: center; border-top: 1px solid #222; }
-.social-icons { margin-bottom: 20px; }
-.social-icons a { font-size: 1.2rem; margin: 0 10px; color: var(--white); transition: var(--transition); }
-.social-icons a:hover { color: var(--accent-color); }
-.footer-content p { font-size: 0.9rem; color: #666; }
-
-/* Animaciones */
-.fade-in-up { opacity: 0; transform: translateY(30px); transition: 1s ease; }
-.fade-in-left { opacity: 0; transform: translateX(-30px); transition: 1s ease; }
-.fade-in-right { opacity: 0; transform: translateX(30px); transition: 1s ease; }
-.visible { opacity: 1; transform: translate(0, 0); }
-
-@media (max-width: 768px) {
-    .nav-links { position: absolute; right: 0; top: 70px; height: calc(100vh - 70px); background-color: #000; flex-direction: column; align-items: center; justify-content: center; width: 100%; transform: translateX(100%); transition: transform 0.3s ease-in; }
-    .nav-links.nav-active { transform: translateX(0%); }
-    .hamburger { display: block; }
-    .hero-content h1 { font-size: 2rem; }
-    .grid-2 { grid-template-columns: 1fr; }
-    .section-title { font-size: 2rem; }
-    .history-banner { max-height: 250px; }
-}
 
 /* ==========================================================================
-   SECCIÓN GALERÍA "REEL" (OPTIMIZADO MÓVIL + AUTO SCROLL)
+   18. GALERÍA REEL (AUTO-SCROLL HORIZONTAL)
+   - Scroll automático infinito controlado por JS (main.js)
+   - En móvil cada item ocupa 70vw para mostrar parte del siguiente
    ========================================================================== */
 
 .gallery-section {
@@ -469,21 +635,20 @@ footer { background-color: #111; padding: 40px 0; text-align: center; border-top
     display: flex;
     gap: 15px;
     overflow-x: auto;
-    padding: 20px 0; /* Padding vertical, sin horizontal para full bleed */
-    scroll-behavior: auto; /* Importante: auto para que el JS controle la velocidad sin inercia */
-    -webkit-overflow-scrolling: touch;
-    
-    /* Ocultar barra de scroll (Estética Móvil) */
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none;  /* IE 10+ */
+    padding: 20px 0;
+    scroll-behavior: auto;              /* El JS controla la velocidad, no CSS */
+    -webkit-overflow-scrolling: touch;   /* Scroll suave en iOS */
+    scrollbar-width: none;               /* Ocultar scrollbar — Firefox */
+    -ms-overflow-style: none;            /* Ocultar scrollbar — IE/Edge */
 }
 
+/* Ocultar scrollbar — Chrome/Safari */
 .gallery-reel::-webkit-scrollbar {
-    display: none; /* Chrome/Safari */
+    display: none;
 }
 
 .reel-item {
-    flex: 0 0 300px; /* Desktop Standard */
+    flex: 0 0 300px;
     height: 400px;
     position: relative;
     border-radius: 12px;
@@ -491,18 +656,18 @@ footer { background-color: #111; padding: 40px 0; text-align: center; border-top
     cursor: pointer;
     border: 1px solid #222;
     transition: var(--transition);
-    /* Prevent image dragging ghost */
-    user-select: none;
+    user-select: none;                   /* Previene ghost al arrastrar */
 }
 
 .reel-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    pointer-events: none; /* Evita arrastrar la imagen en desktop */
+    pointer-events: none;                /* Evita drag de imagen en desktop */
     filter: grayscale(20%) brightness(0.9);
 }
 
+/* Overlay con gradiente que aparece en hover */
 .reel-overlay {
     position: absolute;
     inset: 0;
@@ -521,26 +686,21 @@ footer { background-color: #111; padding: 40px 0; text-align: center; border-top
     transition: transform 0.3s ease;
 }
 
-/* Hover Effects */
-.reel-item:hover {
-    transform: scale(1.02);
-    border-color: var(--accent-color);
-    z-index: 2;
-}
+/* Hover en items del reel */
+.reel-item:hover                { transform: scale(1.02); border-color: var(--accent-color); z-index: 2; }
+.reel-item:hover .reel-overlay  { opacity: 1; }
+.reel-item:hover .reel-icon     { transform: translateY(0); }
+.reel-item:hover img            { filter: grayscale(0%); }
 
-.reel-item:hover .reel-overlay { opacity: 1; }
-.reel-item:hover .reel-icon { transform: translateY(0); }
-.reel-item:hover img { filter: grayscale(0%); }
 
-/* --- WINGS SALSAS BLOCK --- */
-.wings-salsas-hidden {
-    display: none;
-}
+/* ==========================================================================
+   19. WINGS & SALSAS (TABLA DE NIVELES DE PICANTE)
+   - Mobile-first: 1 columna por defecto
+   - Desktop (min-width: 600px): 5 columnas
+   ========================================================================== */
 
-.wings-salsas-visible {
-    display: block;
-    animation: fadeIn 0.5s ease;
-}
+.wings-salsas-hidden  { display: none; }
+.wings-salsas-visible { display: block; animation: fadeIn 0.5s ease; }
 
 .tabla-salsas {
     border: 2px double #ffffff;
@@ -559,6 +719,7 @@ footer { background-color: #111; padding: 40px 0; text-align: center; border-top
     color: var(--white);
 }
 
+/* Grid de salsas — 1 columna en móvil */
 .salsas {
     grid-template-columns: 1fr;
 }
@@ -592,6 +753,7 @@ footer { background-color: #111; padding: 40px 0; text-align: center; border-top
     text-transform: uppercase;
 }
 
+/* Indicador de nivel de picante (íconos de fuego) */
 .nivel-picante {
     display: flex;
     align-items: center;
@@ -603,15 +765,138 @@ footer { background-color: #111; padding: 40px 0; text-align: center; border-top
     flex-shrink: 0;
 }
 
-.flame {
-    width: 16px;
-    height: 16px;
-}
+.flame { width: 16px; height: 16px; }
 
+/* Colores de fuego por nivel */
 .flame-yellow { fill: #FFD700; }
 .flame-orange { fill: #FFA500; }
-.flame-red { fill: #FF4500; }
-.flame-dark { fill: #8B0000; }
+.flame-red    { fill: #FF4500; }
+.flame-dark   { fill: #8B0000; }
+
+
+/* ==========================================================================
+   20. FOOTER
+   ========================================================================== */
+
+footer { background-color: #111; padding: 40px 0; text-align: center; border-top: 1px solid #222; }
+
+.social-icons         { margin-bottom: 20px; }
+.social-icons a       { font-size: 1.2rem; margin: 0 10px; color: var(--white); transition: var(--transition); }
+.social-icons a:hover { color: var(--accent-color); }
+.footer-content p     { font-size: 0.9rem; color: #666; }
+
+
+/* ==========================================================================
+   21. ANIMACIONES (SCROLL REVEAL + UTILIDADES)
+   - Las clases fade-in-* se activan con IntersectionObserver en main.js
+   - Al entrar en viewport, se agrega la clase .visible
+   ========================================================================== */
+
+.fade-in-up    { opacity: 0; transform: translateY(30px);  transition: 1s ease; }
+.fade-in-left  { opacity: 0; transform: translateX(-30px); transition: 1s ease; }
+.fade-in-right { opacity: 0; transform: translateX(30px);  transition: 1s ease; }
+.visible       { opacity: 1; transform: translate(0, 0); }
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pop {
+    0%   { transform: scale(1); }
+    50%  { transform: scale(1.3); }
+    100% { transform: scale(1); }
+}
+
+
+/* ==========================================================================
+   22. RESPONSIVE — TABLET (max-width: 900px)
+   ========================================================================== */
+
+@media (max-width: 900px) {
+
+    /* Experiencias: Hero card pasa a vertical (imagen arriba, texto abajo) */
+    .hero-card              { flex-direction: column-reverse; }
+    .hero-images-right      { height: 300px; flex-basis: auto; width: 100%; margin-bottom: 0px; }
+    .hero-content-left      { padding: 20px; padding-top: 15px; }
+    .hero-content-left .review-text { font-size: 1rem; }
+    .hero-content-left .username    { font-size: 1rem; }
+
+    /* Masonry: de 3 a 2 columnas */
+    .masonry-grid { column-count: 2; }
+}
+
+
+/* ==========================================================================
+   23. RESPONSIVE — MÓVIL (max-width: 768px)
+   ========================================================================== */
+
+@media (max-width: 768px) {
+
+    /* --- Navegación: menú hamburguesa --- */
+    .nav-links {
+        position: absolute;
+        right: 0;
+        top: 70px;
+        height: calc(100vh - 70px);
+        background-color: #000;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        transform: translateX(100%);         /* Oculto por defecto */
+        transition: transform 0.3s ease-in;
+    }
+    .nav-links.nav-active { transform: translateX(0%); }  /* Se muestra al hacer clic */
+    .hamburger { display: block; }
+
+    /* --- Hero (Inicio) --- */
+    .hero-content h1 { font-size: 2rem; }
+
+    /* --- Headers internos (Menú, Contacto, etc.) ---
+       105px = compensa barra anuncios (35px) + navbar (~60px) + 10px de espacio
+       height: auto + min-height para que el contenido (ej: tabla ingredientes) no se comprima */
+    .page-header     { margin-top: 105px; height: auto; min-height: 40vh; }
+    .header-content h1 { font-size: 2rem; }
+
+    /* --- Layouts --- */
+    .grid-2        { grid-template-columns: 1fr; }
+    .section-title { font-size: 2rem; }
+
+    /* --- Historia --- */
+    .history-banner { max-height: 250px; }
+
+    /* --- Reseñas CTA --- */
+    .review-container { padding: 40px 20px; }
+    .review-btn       { width: 100%; padding: 15px 20px; font-size: 1rem; }
+
+    /* --- Galería Reel --- */
+    .reel-item {
+        flex: 0 0 70vw;       /* Muestra parte del siguiente item */
+        height: 350px;
+    }
+    .gallery-reel {
+        gap: 15px;
+        padding-left: 20px;   /* Espacio inicial para no pegar al borde */
+    }
+}
+
+
+/* ==========================================================================
+   24. RESPONSIVE — MÓVIL PEQUEÑO (max-width: 600px)
+   ========================================================================== */
+
+@media (max-width: 600px) {
+
+    /* Masonry: de 2 a 1 columna */
+    .masonry-grid { column-count: 1; }
+}
+
+
+/* ==========================================================================
+   RESPONSIVE — DESKTOP (min-width: 600px)
+   Tabla de salsas: de 1 columna (móvil) a 5 columnas
+   ========================================================================== */
 
 @media (min-width: 600px) {
     .tabla-salsas {
@@ -628,19 +913,5 @@ footer { background-color: #111; padding: 40px 0; text-align: center; border-top
     }
     .salsa-texto {
         text-align: center;
-    }
-}
-
-/* --- MOBILE FIRST ADJUSTMENTS --- */
-@media (max-width: 768px) {
-    .reel-item {
-        /* Ancho relativo al viewport para que se vea parte del siguiente */
-        flex: 0 0 70vw; 
-        height: 350px;
-    }
-    
-    .gallery-reel {
-        gap: 15px;
-        padding-left: 20px; /* Espacio inicial */
     }
 }
