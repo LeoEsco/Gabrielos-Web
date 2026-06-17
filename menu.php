@@ -9,11 +9,14 @@
             <h1>NUESTRO <span class="text-gold">MENÚ</span></h1>
             <p>Sabores auténticos creados con pasión</p>
             <p style="font-size: 0.9rem; margin-top: 5px; opacity: 0.7;">En caso de requerir factura se aplicara un cargo del 16% de IVA</p>
+        </div>
+    </header>
 
+    <section class="section-padding bg-black menu-section">
+        <div class="container">
 
             <!-- Ingredientes y extras para pizzas artesanales -->
-
-                <style>
+            <style>
                 .salsas-wrap {
                     background: #111;
                     border-radius: 10px;
@@ -116,54 +119,130 @@
                     color: #fff;
                     flex-shrink: 0;
                 }
-                </style>
+            </style>
 
-                <div class="ingredientes-wrap">
+            <div class="ingredientes-wrap" style="margin-bottom: 30px;">
                 <fieldset class="tabla-ingredientes">
                     <legend>INGREDIENTES</legend>
 
                     <div class="grid-layout ingredientes border-bottom">
-                    <div class="item">Pepperoni</div>
-                    <div class="item">Champiñón</div>
-                    <div class="item">Jalapeño</div>
-                    <div class="item">Salchicha Italiana</div>
-                    <div class="item">Piña</div>
-                    <div class="item">Chile Morrón</div>
-                    <div class="item">Jamón de Pavo</div>
-                    <div class="item">Aceituna</div>
-                    <div class="item">Cebolla</div>
+                        <div class="item">Pepperoni</div>
+                        <div class="item">Champiñón</div>
+                        <div class="item">Jalapeño</div>
+                        <div class="item">Salchicha Italiana</div>
+                        <div class="item">Piña</div>
+                        <div class="item">Chile Morrón</div>
+                        <div class="item">Jamón de Pavo</div>
+                        <div class="item">Aceituna</div>
+                        <div class="item">Cebolla</div>
                     </div>
 
                     <div class="grid-layout extras">
-                    <div class="extra-item">
-                        <div>
-                        <div class="extra-label">Tocino</div>
-                        <div class="extra-name">EXTRA</div>
+                        <div class="extra-item">
+                            <div>
+                                <div class="extra-label">Tocino</div>
+                                <div class="extra-name">EXTRA</div>
+                            </div>
+                            <div class="precio">$30</div>
                         </div>
-                        <div class="precio">$30</div>
-                    </div>
-                    <div class="extra-item">
-                        <div>
-                        <div class="extra-label">Queso</div>
-                        <div class="extra-name">EXTRA</div>
+                        <div class="extra-item">
+                            <div>
+                                <div class="extra-label">Queso</div>
+                                <div class="extra-name">EXTRA</div>
+                            </div>
+                            <div class="precio">$35</div>
                         </div>
-                        <div class="precio">$35</div>
-                    </div>
-                    </div>
-
                 </fieldset>
-                </div>
+            </div>
 
             <!-- BLOQUE DE SALSAS WINGS & BONELESS -->
+            <style>
+                .salsas-wrap {
+                    background: #000000;
+                    border-radius: 10px;
+                    padding: 16px 12px;
+                    font-family: 'Arial Black', Arial, sans-serif;
+                }
+                .salsas-title {
+                    text-align: center;
+                    color: #fff;
+                    font-size: 13px;
+                    letter-spacing: 3px;
+                    font-weight: 900;
+                    margin: 0 0 14px;
+                    position: relative;
+                }
+                .salsas-title::before, .salsas-title::after {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    width: 18%;
+                    height: 1px;
+                    background: #fff;
+                }
+                .salsas-title::before { left: 4%; }
+                .salsas-title::after { right: 4%; }
+                .salsas-grid {
+                    display: grid;
+                    grid-template-columns: repeat(3, minmax(0, 1fr));
+                    border: 1.5px solid #555;
+                    border-radius: 6px;
+                    overflow: hidden;
+                }
+                .salsa-item {
+                    padding: 10px 6px;
+                    color: #fff;
+                    font-size: 11px;
+                    font-weight: 700;
+                    text-align: center;
+                    letter-spacing: 0.5px;
+                    border-right: 1px solid #555;
+                    border-bottom: 1px solid #555;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 5px;
+                    line-height: 1.2;
+                }
+                .salsa-item:nth-child(3n) { border-right: none; }
+                .salsa-item:nth-last-child(-n+3):nth-child(3n+1),
+                .salsa-item:nth-last-child(-n+2):nth-child(3n+2),
+                .salsa-item:last-child { border-bottom: none; }
+                .salsa-label { font-size: 9px; color: #999; font-weight: 400; letter-spacing: 1px; }
+                .salsa-name { font-size: 12px; font-weight: 900; }
+                .heat-level { font-size: 12px; line-height: 1; color: var(--accent-color); letter-spacing: 2px; }
+            </style>
 
+            <div class="salsas-wrap" style="margin-bottom: 30px;">
+                <p class="salsas-title">SALSAS</p>
+                <div class="salsas-grid">
+                    <div class="salsa-item">
+                        <span class="salsa-label">Salsa</span>
+                        <span class="salsa-name">BBQ</span>
+                    </div>
+                    <div class="salsa-item">
+                        <span class="salsa-label">Salsa</span>
+                        <span class="salsa-name">LIMÓN PIMIENTA</span>
+                    </div>
+                    <div class="salsa-item">
+                        <span class="salsa-label">Salsa</span>
+                        <span class="salsa-name">BUFFALO</span>
+                        <span class="heat-level"><i class="fas fa-fire"></i><i class="fas fa-fire"></i></span>
+                    </div>
+                    <div class="salsa-item">
+                        <span class="salsa-label">Salsa</span>
+                        <span class="salsa-name">CHIPOTLE</span>
+                        <span class="heat-level"><i class="fas fa-fire"></i><i class="fas fa-fire"></i><i class="fas fa-fire"></i></span>
+                    </div>
+                    <div class="salsa-item" style="grid-column: span 2; border-right: none;">
+                        <span class="salsa-label">Salsa</span>
+                        <span class="salsa-name">MANGO HABANERO</span>
+                        <span class="heat-level"><i class="fas fa-fire"></i><i class="fas fa-fire"></i><i class="fas fa-fire"></i><i class="fas fa-fire"></i></span>
+                    </div>
+                </div>
+            </div>
 
-
-        </div>
-    </header>
-
-    <section class="section-padding bg-black menu-section">
-        <div class="container">
-            
             <div class="menu-filters fade-in-up">
                 <button class="filter-btn active" data-filter="Pizzas Artesanales">Pizzas Artesanales</button>
                 <button class="filter-btn" data-filter="Especialidades">Especialidades</button>
@@ -176,6 +255,7 @@
                 <button class="filter-btn" data-filter="Bebidas sin alcohol">Bebidas sin alcohol</button>
 
             </div>
+
 
             <!-- MENU PRINCIPAL -->
 
