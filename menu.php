@@ -149,7 +149,151 @@
 
             </div>
 
+            <!-- BLOQUE DE SALSAS WINGS & BONELESS -->
+            
+            <div class="menu-container">
+            <fieldset class="tabla-salsas">
+                <legend>SALSAS</legend>
+                <div class="grid-layout salsas">
+                
+                <div class="item-salsa">
+                    <span class="salsa-texto">Salsa<br><strong>BBQ</strong></span>
+                </div>
+                
+                <div class="item-salsa">
+                    <span class="salsa-texto">Salsa<br><strong>LIMÓN<br>PIMIENTA</strong></span>
+                </div>
+                
+                <div class="item-salsa">
+                    <span class="salsa-texto">Salsa<br><strong>BUFFALO</strong></span>
+                    <div class="nivel-picante">
+                    <svg class="flame flame-yellow" viewBox="0 0 24 24"><path d="M12 2c0 0-4 4-4 8s4 12 4 12 4-8 4-12-4-8-4-8z"/></svg>
+                    <svg class="flame flame-orange" viewBox="0 0 24 24"><path d="M12 2c0 0-4 4-4 8s4 12 4 12 4-8 4-12-4-8-4-8z"/></svg>
+                    </div>
+                </div>
+                
+                <div class="item-salsa">
+                    <span class="salsa-texto">Salsa<br><strong>CHIPOTLE</strong></span>
+                    <div class="nivel-picante">
+                    <svg class="flame flame-yellow" viewBox="0 0 24 24"><path d="M12 2c0 0-4 4-4 8s4 12 4 12 4-8 4-12-4-8-4-8z"/></svg>
+                    <svg class="flame flame-orange" viewBox="0 0 24 24"><path d="M12 2c0 0-4 4-4 8s4 12 4 12 4-8 4-12-4-8-4-8z"/></svg>
+                    <svg class="flame flame-red" viewBox="0 0 24 24"><path d="M12 2c0 0-4 4-4 8s4 12 4 12 4-8 4-12-4-8-4-8z"/></svg>
+                    </div>
+                </div>
+                
+                <div class="item-salsa">
+                    <span class="salsa-texto">Salsa<br><strong>MANGO<br>HABANERO</strong></span>
+                    <div class="nivel-picante">
+                    <svg class="flame flame-yellow" viewBox="0 0 24 24"><path d="M12 2c0 0-4 4-4 8s4 12 4 12 4-8 4-12-4-8-4-8z"/></svg>
+                    <svg class="flame flame-orange" viewBox="0 0 24 24"><path d="M12 2c0 0-4 4-4 8s4 12 4 12 4-8 4-12-4-8-4-8z"/></svg>
+                    <svg class="flame flame-red" viewBox="0 0 24 24"><path d="M12 2c0 0-4 4-4 8s4 12 4 12 4-8 4-12-4-8-4-8z"/></svg>
+                    <svg class="flame flame-dark" viewBox="0 0 24 24"><path d="M12 2c0 0-4 4-4 8s4 12 4 12 4-8 4-12-4-8-4-8z"/></svg>
+                    </div>
+                </div>
 
+                </div>
+            </fieldset>
+            </div>
+
+            <style>
+            .menu-container {
+                background-color: #000000;
+                color: #ffffff;
+                font-family: sans-serif;
+                padding: 10px;
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                box-sizing: border-box;
+            }
+            
+            .tabla-salsas {
+                border: 2px double #ffffff;
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                max-width: 430px; /* Límite para móvil */
+            }
+            
+            .tabla-salsas legend {
+                font-family: "Arial Black", impact, sans-serif;
+                font-size: 16px;
+                letter-spacing: 1px;
+                text-align: center;
+                padding: 0 10px;
+            }
+            
+            .grid-layout {
+                display: grid;
+                background-color: #ffffff; /* Color de líneas divisorias */
+                gap: 1px; /* Grosor de líneas divisorias */
+            }
+            
+            .salsas {
+                grid-template-columns: 1fr; /* Apilado vertical forzado para móvil */
+            }
+            
+            .item-salsa {
+                background-color: #000000;
+                padding: 12px 15px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between; /* Separa texto e iconos */
+                gap: 10px;
+            }
+            
+            .salsa-texto {
+                font-size: 11px;
+                text-align: left;
+                line-height: 1.1;
+            }
+            
+            .salsa-texto strong {
+                font-size: 14px;
+                font-family: "Arial Black", impact, sans-serif;
+                text-transform: uppercase;
+            }
+            
+            .nivel-picante {
+                display: flex;
+                align-items: center;
+                border: 1px solid #ffffff;
+                border-radius: 20px;
+                padding: 4px 8px;
+                gap: 3px;
+                background-color: #000000;
+            }
+            
+            .flame {
+                width: 16px;
+                height: 16px;
+            }
+            
+            .flame-yellow { fill: #FFD700; }
+            .flame-orange { fill: #FFA500; }
+            .flame-red { fill: #FF4500; }
+            .flame-dark { fill: #8B0000; }
+
+            /* Adaptación opcional a escritorio si el contenedor supera los 600px */
+            @media (min-width: 600px) {
+                .tabla-salsas {
+                max-width: 1000px;
+                }
+                .salsas {
+                grid-template-columns: repeat(5, 1fr);
+                }
+                .item-salsa {
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                }
+                .salsa-texto {
+                text-align: center;
+                }
+            }
+            </style>
+
+            <!-- MENU PRINCIPAL -->
 
             <div class="menu-grid">
                 

@@ -117,12 +117,12 @@ img { width: 100%; display: block; }
 
 /* --- Navegación --- */
 .navbar {
-    position: fixed; 
-    /* Ajuste para que quede debajo de la barra de anuncios */
-    top: 35px; 
+    position: fixed;
+    top: 35px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.95);
-    padding: 20px 0; z-index: 1000;
+    padding: 20px 0;
+    z-index: 1000;
     border-bottom: 1px solid #222;
 }
 
