@@ -513,6 +513,40 @@ img { width: 100%; display: block; }
     letter-spacing: 0.2px;
 }
 
+/* ======= Bebida Card (sin alcohol - tono azul) ======= */
+.bebida-header {
+    background: linear-gradient(135deg, #030d1a 0%, #081a2d 50%, #030d1a 100%) !important;
+    border-bottom-color: #4a9eda !important;
+}
+
+.bebida-header i {
+    color: #4a9eda !important;
+}
+
+.bebida-header h3 {
+    color: #4a9eda !important;
+}
+
+.bebida-card .cerveza-price {
+    color: #4a9eda;
+    background: rgba(74, 158, 218, 0.1);
+}
+
+.bebida-card .cerveza-row:hover {
+    background-color: rgba(74, 158, 218, 0.06);
+}
+
+/* Fila de jarra (separador visual) */
+.jarra-row {
+    border-top: 1px dashed rgba(255,255,255,0.12) !important;
+    padding-top: 12px;
+}
+
+.jarra-row .cerveza-name {
+    font-style: italic;
+    color: #bbb;
+}
+
 
 /* ==========================================================================
    13. PROMOCIONES

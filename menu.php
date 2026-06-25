@@ -1031,253 +1031,148 @@
 
                     <div class="menu-item fade-in-up" data-category="Bebidas sin alcohol">
                         <div class="menu-img">
-                            <img src="imgmenu/pizzasarte/fresa.jpeg" alt="Agua de fresa">
-                            <span class="price">$40</span>
-                       </div>
+                            <img src="imgmenu/pizzasarte/frutosrojos.jpeg" alt="Frutos Rojos">
+                            <span class="price">$80</span>
+                        </div>
                         <div class="menu-info">
-                            <h3>AGUA DE FRESA (500ml)</h3>
+                            <h3>FRUTOS ROJOS (500ml)</h3>
                             <p></p>
                         </div>
                     </div>
                     <div class="menu-item fade-in-up" data-category="Bebidas sin alcohol">
                         <div class="menu-img">
-                            <img src="imgmenu/pizzasarte/fresalimon.jpeg" alt="Agua de fresa">
-                            <span class="price">$40</span>
+                            <img src="imgmenu/pizzasarte/limonadafrutosrojos.jpeg" alt="Limonada de Frutos Rojos">
+                            <span class="price">$55</span>
                         </div>
                         <div class="menu-info">
-                            <h3>AGUA DE FRESA CON LIMÓN (500ml)</h3>
+                            <h3>LIMONADA DE FRUTOS ROJOS (500ml)</h3>
                             <p></p>
                         </div>
                     </div>
                     <div class="menu-item fade-in-up" data-category="Bebidas sin alcohol">
                         <div class="menu-img">
-                            <img src="imgmenu/pizzasarte/piñafresa.jpeg" alt="Agua de fresa">
+                            <img src="imgmenu/pizzasarte/sandia.jpeg" alt="Agua de Sandía">
                             <span class="price">$40</span>
                         </div>
                         <div class="menu-info">
-                            <h3>AGUA DE FRESA CON PIÑA (500ml)</h3>
+                            <h3>AGUA DE SANDÍA (500ml)</h3>
                             <p></p>
                         </div>
                     </div>
-                    <div class="menu-item fade-in-up" data-category="Bebidas sin alcohol">
-                        <div class="menu-img">
-                            <img src="imgmenu/pizzasarte/limon.jpeg" alt="Agua de fresa">
-                            <span class="price">$40</span>
+                    <!-- ========== TABLAS BEBIDAS SIN ALCOHOL ========== -->
+
+                    <!-- AGUAS DE FRESA -->
+                    <div class="menu-item fade-in-up cerveza-card bebida-card" data-category="Bebidas sin alcohol">
+                        <div class="cerveza-header bebida-header">
+                            <i class="fas fa-glass-whiskey"></i>
+                            <h3>AGUAS DE FRESA <span class="cerveza-ml">(500ml)</span></h3>
                         </div>
-                        <div class="menu-info">
-                            <h3>AGUA DE LIMÓN (500ml)</h3>
-                            <p></p>
-                        </div>
-                    </div>
-                    <div class="menu-item fade-in-up" data-category="Bebidas sin alcohol">
-                        <div class="menu-img">
-                            <img src="imgmenu/pizzasarte/pepinolimon.jpeg" alt="Agua de fresa">
-                            <span class="price">$40</span>
-                        </div>
-                        <div class="menu-info">
-                            <h3>AGUA DE PEPINO LIMÓN (500ml)</h3>
-                            <p></p>
-                        </div>
-                    </div>
-                    <div class="menu-item fade-in-up" data-category="Bebidas sin alcohol">
-                        <div class="menu-img">
-                            <img src="imgmenu/pizzasarte/mineral.jpeg" alt="Agua de fresa">
-                            <span class="price">$45</span>
-                        </div>
-                        <div class="menu-info">
-                            <h3>LIMONADA MINERAL (500ml)</h3>
-                            <p></p>
-                        </div>
-                    </div>
-                    <div class="menu-item fade-in-up" data-category="Bebidas sin alcohol">
-                        <div class="menu-img">
-                            <img src="imgmenu/pizzasarte/piñalimon.jpeg" alt="Agua de fresa">
-                            <span class="price">$40</span>
-                        </div>
-                        <div class="menu-info">
-                            <h3>AGUA DE PIÑA CON LIMÓN (500ml)</h3>
-                            <p></p>
-                        </div>
-                    </div>
-                    <div class="menu-item fade-in-up" data-category="Bebidas sin alcohol">
-                        <div class="menu-img">
-                            <img src="imgmenu/pizzasarte/piñamango.jpeg" alt="Agua de fresa">
-                            <span class="price">$40</span>
-                        </div>
-                        <div class="menu-info">
-                            <h3>AGUA DE PIÑA CON MANGO (500ml)</h3>
-                            <p></p>
-                        </div>
-                    </div>
-                    <div class="menu-item fade-in-up" data-category="Bebidas sin alcohol">
-                        <div class="menu-img">
-                            <img src="imgmenu/pizzasarte/aguamango.jpeg" alt="Agua de fresa">
-                            <span class="price">$40</span>
-                        </div>
-                        <div class="menu-info">
-                            <h3>AGUA DE MANGO (500ml)</h3>
-                            <p></p>
-                        </div>
-                    </div>
-                    <div class="menu-item fade-in-up" data-category="Bebidas sin alcohol">
-                        <div class="menu-img">
-                            <img src="imgmenu/pizzasarte/mangofresa.jpeg" alt="Agua de fresa">
-                            <span class="price">$40</span>
-                        </div>
-                        <div class="menu-info">
-                            <h3>AGUA DE MANGO FRESA (500ml)</h3>
-                            <p></p>
-                        </div>
-                    </div>
-                    <div class="menu-item fade-in-up" data-category="Bebidas sin alcohol">
-                        <div class="menu-img">
-                            <img src="imgmenu/pizzasarte/mangolimon.jpeg" alt="Agua de fresa">
-                            <span class="price">$40</span>
-                        </div>
-                        <div class="menu-info">
-                            <h3>AGUA DE MANGO CON LIMÓN (500ml)</h3>
-                            <p></p>
-                        </div>
-                    </div>
-                    <div class="menu-item fade-in-up" data-category="Bebidas sin alcohol">
-                        <div class="menu-img">
-                            <img src="imgmenu/pizzasarte/jamaica.jpeg" alt="Agua de fresa">
-                            <span class="price">$40</span>
-                        </div>
-                        <div class="menu-info">
-                            <h3>AGUA DE JAMAICA (500ml)</h3>
-                            <p></p>
-                        </div>
-                    </div>
-                    <div class="menu-item fade-in-up" data-category="Bebidas sin alcohol">
-                        <div class="menu-img">
-                            <img src="imgmenu/pizzasarte/jamaicalimon.jpeg" alt="Agua de fresa">
-                            <span class="price">$40</span>
-                        </div>
-                        <div class="menu-info">
-                            <h3>AGUA DE JAMAICA CON LIMÓN (500ml)</h3>
-                            <p></p>
+                        <div class="cerveza-list">
+                            <div class="cerveza-row"><span class="cerveza-name">Agua de Fresa</span><span class="cerveza-price">$40</span></div>
+                            <div class="cerveza-row"><span class="cerveza-name">Agua de Fresa con Limón</span><span class="cerveza-price">$40</span></div>
+                            <div class="cerveza-row"><span class="cerveza-name">Agua de Fresa con Piña</span><span class="cerveza-price">$40</span></div>
+                            <div class="cerveza-row jarra-row"><span class="cerveza-name">Jarra <span class="cerveza-ml">(2.5L)</span></span><span class="cerveza-price">$179</span></div>
                         </div>
                     </div>
 
-                    <div class="menu-item fade-in-up" data-category="Bebidas sin alcohol">
-                        <div class="menu-img">
-                            <img src="imgmenu/pizzasarte/aguaembot.jpeg" alt="Agua Embotellada">
-                            <span class="price">$25</span>
+                    <!-- AGUAS DE LIMÓN -->
+                    <div class="menu-item fade-in-up cerveza-card bebida-card" data-category="Bebidas sin alcohol">
+                        <div class="cerveza-header bebida-header">
+                            <i class="fas fa-lemon"></i>
+                            <h3>AGUAS DE LIMÓN <span class="cerveza-ml">(500ml)</span></h3>
                         </div>
-                        <div class="menu-info">
-                            <h3>AGUA EMBOTELLADA (500ml)</h3>
-                            <p>Agua natural purificada.</p>
-                        </div>
-                    </div>
-
-                    <div class="menu-item fade-in-up" data-category="Bebidas sin alcohol">
-                        <div class="menu-img">
-                            <img src="imgmenu/pizzasarte/cafefrio.jpeg" alt="Café Frío">
-                            <span class="price">$65</span>
-                        </div>
-                        <div class="menu-info">
-                            <h3>CAFÉ FRÍO</h3>
-                            <p>Café helado refrescante.</p>
+                        <div class="cerveza-list">
+                            <div class="cerveza-row"><span class="cerveza-name">Agua de Limón</span><span class="cerveza-price">$40</span></div>
+                            <div class="cerveza-row"><span class="cerveza-name">Agua de Pepino Limón</span><span class="cerveza-price">$40</span></div>
+                            <div class="cerveza-row"><span class="cerveza-name">Limonada Mineral</span><span class="cerveza-price">$55</span></div>
+                            <div class="cerveza-row jarra-row"><span class="cerveza-name">Jarra <span class="cerveza-ml">(2.5L)</span></span><span class="cerveza-price">$179</span></div>
                         </div>
                     </div>
 
-                    <div class="menu-item fade-in-up" data-category="Bebidas sin alcohol">
-                        <div class="menu-img">
-                            <img src="imgmenu/pizzasarte/jarras.jpeg" alt="Jarras">
-                            <span class="price">$179</span>
+                    <!-- AGUAS DE PIÑA -->
+                    <div class="menu-item fade-in-up cerveza-card bebida-card" data-category="Bebidas sin alcohol">
+                        <div class="cerveza-header bebida-header">
+                            <i class="fas fa-glass-whiskey"></i>
+                            <h3>AGUAS DE PIÑA <span class="cerveza-ml">(500ml)</span></h3>
                         </div>
-                        <div class="menu-info">
-                            <h3>JARRAS (2.5L)</h3>
-                            <p>Jarra de agua de sabor.</p>
-                        </div>
-                    </div>
-
-                    <div class="menu-item fade-in-up" data-category="Bebidas sin alcohol">
-                        <div class="menu-img">
-                            <img src="imgmenu/pizzasarte/jugos.jpeg" alt="Jarras">
-                            <span class="price">$35</span>
-                        </div>
-                        <div class="menu-info">
-                            <h3>JUGO DE MANZANA (500ml)</h3>
-                            <p></p>
+                        <div class="cerveza-list">
+                            <div class="cerveza-row"><span class="cerveza-name">Agua de Piña con Limón</span><span class="cerveza-price">$40</span></div>
+                            <div class="cerveza-row"><span class="cerveza-name">Agua de Piña con Mango</span><span class="cerveza-price">$40</span></div>
+                            <div class="cerveza-row jarra-row"><span class="cerveza-name">Jarra <span class="cerveza-ml">(2.5L)</span></span><span class="cerveza-price">$179</span></div>
                         </div>
                     </div>
 
-                    <div class="menu-item fade-in-up" data-category="Bebidas sin alcohol">
-                        <div class="menu-img">
-                            <img src="imgmenu/pizzasarte/jugos.jpeg" alt="Jarras">
-                            <span class="price">$35</span>
+                    <!-- AGUAS DE MANGO -->
+                    <div class="menu-item fade-in-up cerveza-card bebida-card" data-category="Bebidas sin alcohol">
+                        <div class="cerveza-header bebida-header">
+                            <i class="fas fa-glass-whiskey"></i>
+                            <h3>AGUAS DE MANGO <span class="cerveza-ml">(500ml)</span></h3>
                         </div>
-                        <div class="menu-info">
-                            <h3>JUGO DE MANGO (500ml)</h3>
-                            <p></p>
-                        </div>
-                    </div>
-
-                    <div class="menu-item fade-in-up" data-category="Bebidas sin alcohol">
-                        <div class="menu-img">
-                            <img src="imgmenu/pizzasarte/jugos.jpeg" alt="Jarras">
-                            <span class="price">$35</span>
-                        </div>
-                        <div class="menu-info">
-                            <h3>JUGO DE UVA (500ml)</h3>
-                            <p></p>
+                        <div class="cerveza-list">
+                            <div class="cerveza-row"><span class="cerveza-name">Agua de Mango</span><span class="cerveza-price">$40</span></div>
+                            <div class="cerveza-row"><span class="cerveza-name">Agua de Mango Fresa</span><span class="cerveza-price">$40</span></div>
+                            <div class="cerveza-row"><span class="cerveza-name">Agua de Mango con Limón</span><span class="cerveza-price">$40</span></div>
+                            <div class="cerveza-row jarra-row"><span class="cerveza-name">Jarra <span class="cerveza-ml">(2.5L)</span></span><span class="cerveza-price">$179</span></div>
                         </div>
                     </div>
 
-                    <div class="menu-item fade-in-up" data-category="Bebidas sin alcohol">
-                        <div class="menu-img">
-                            <img src="imgmenu/pizzasarte/jugos.jpeg" alt="Jarras">
-                            <span class="price">$35</span>
+                    <!-- AGUAS DE JAMAICA -->
+                    <div class="menu-item fade-in-up cerveza-card bebida-card" data-category="Bebidas sin alcohol">
+                        <div class="cerveza-header bebida-header">
+                            <i class="fas fa-glass-whiskey"></i>
+                            <h3>AGUAS DE JAMAICA <span class="cerveza-ml">(500ml)</span></h3>
                         </div>
-                        <div class="menu-info">
-                            <h3>JUGO DE DURAZNO (500ml)</h3>
-                            <p></p>
-                        </div>
-                    </div>
-
-                    <div class="menu-item fade-in-up" data-category="Bebidas sin alcohol">
-                        <div class="menu-img">
-                            <img src="imgmenu/pizzasarte/jugos.jpeg" alt="Jarras">
-                            <span class="price">$35</span>
-                        </div>
-                        <div class="menu-info">
-                            <h3>JUGO DE NARANJA (500ml)</h3>
-                            <p></p>
+                        <div class="cerveza-list">
+                            <div class="cerveza-row"><span class="cerveza-name">Agua de Jamaica</span><span class="cerveza-price">$40</span></div>
+                            <div class="cerveza-row"><span class="cerveza-name">Agua de Jamaica con Limón</span><span class="cerveza-price">$40</span></div>
+                            <div class="cerveza-row jarra-row"><span class="cerveza-name">Jarra <span class="cerveza-ml">(2.5L)</span></span><span class="cerveza-price">$179</span></div>
                         </div>
                     </div>
 
-                    <div class="menu-item fade-in-up" data-category="Bebidas sin alcohol">
-                        <div class="menu-img">
-                            <img src="imgmenu/pizzasarte/chesco.jpeg" alt="Jarras">
-                            <span class="price">$40</span>
+                    <!-- AGUAS DE FRUTOS ROJOS -->
+                    <div class="menu-item fade-in-up cerveza-card bebida-card" data-category="Bebidas sin alcohol">
+                        <div class="cerveza-header bebida-header">
+                            <i class="fas fa-wine-glass-alt"></i>
+                            <h3>AGUAS DE FRUTOS ROJOS</h3>
                         </div>
-                        <div class="menu-info">
-                            <h3> REFRESCOS (500ml)</h3>
-                            <p>Coca, Coca Light y Coca sin azúcar.</p>
-                        </div>
-                    </div>
-
-                    <div class="menu-item fade-in-up" data-category="Bebidas sin alcohol">
-                        <div class="menu-img">
-                            <img src="imgmenu/pizzasarte/topochico.jpeg" alt="Jarras">
-                            <span class="price">$35</span>
-                        </div>
-                        <div class="menu-info">
-                            <h3> TOPOCHICO (355ml)</h3>
-                            <p></p>
+                        <div class="cerveza-list">
+                            <div class="cerveza-row"><span class="cerveza-name">Frutos Rojos <span class="cerveza-ml">(500ml)</span></span><span class="cerveza-price">$80</span></div>
+                            <div class="cerveza-row"><span class="cerveza-name">Limonada de Frutos Rojos <span class="cerveza-ml">(500ml)</span></span><span class="cerveza-price">$55</span></div>
+                            <div class="cerveza-row jarra-row"><span class="cerveza-name">Jarra de Frutos Rojos <span class="cerveza-ml">(2.5L)</span></span><span class="cerveza-price">$320</span></div>
+                            <div class="cerveza-row jarra-row"><span class="cerveza-name">Jarra de Limonada de Frutos Rojos <span class="cerveza-ml">(2.5L)</span></span><span class="cerveza-price">$220</span></div>
                         </div>
                     </div>
 
-                    <div class="menu-item fade-in-up" data-category="Bebidas sin alcohol">
-                        <div class="menu-img">
-                            <img src="imgmenu/pizzasarte/fuze.jpeg" alt="Jarras">
-                            <span class="price">$35</span>
+                    <!-- JUGOS Y VARIEDAD -->
+                    <div class="menu-item fade-in-up cerveza-card bebida-card" data-category="Bebidas sin alcohol">
+                        <div class="cerveza-header bebida-header">
+                            <i class="fas fa-blender"></i>
+                            <h3>JUGOS Y VARIEDAD</h3>
                         </div>
-                        <div class="menu-info">
-                            <h3> FUZETEA (355ml)</h3>
-                            <p>Limón y Durazno</p>
+                        <div class="cerveza-list">
+                            <div class="cerveza-row"><span class="cerveza-name">Jugo de Manzana <span class="cerveza-ml">(500ml)</span></span><span class="cerveza-price">$35</span></div>
+                            <div class="cerveza-row"><span class="cerveza-name">Jugo de Mango <span class="cerveza-ml">(500ml)</span></span><span class="cerveza-price">$35</span></div>
+                            <div class="cerveza-row"><span class="cerveza-name">Jugo de Uva <span class="cerveza-ml">(500ml)</span></span><span class="cerveza-price">$35</span></div>
+                            <div class="cerveza-row"><span class="cerveza-name">Jugo de Durazno <span class="cerveza-ml">(500ml)</span></span><span class="cerveza-price">$35</span></div>
+                            <div class="cerveza-row"><span class="cerveza-name">Jugo de Naranja <span class="cerveza-ml">(500ml)</span></span><span class="cerveza-price">$35</span></div>
+                            <div class="cerveza-row"><span class="cerveza-name">Fuzetea Limón <span class="cerveza-ml">(355ml)</span></span><span class="cerveza-price">$35</span></div>
+                            <div class="cerveza-row"><span class="cerveza-name">Fuzetea Durazno <span class="cerveza-ml">(355ml)</span></span><span class="cerveza-price">$35</span></div>
+                            <div class="cerveza-row"><span class="cerveza-name">Agua Embotellada <span class="cerveza-ml">(500ml)</span></span><span class="cerveza-price">$25</span></div>
+                            <div class="cerveza-row"><span class="cerveza-name">Café Frío</span><span class="cerveza-price">$65</span></div>
+                        </div>
+                    </div>
+
+                    <!-- REFRESCOS Y VARIEDAD -->
+                    <div class="menu-item fade-in-up cerveza-card bebida-card" data-category="Bebidas sin alcohol">
+                        <div class="cerveza-header bebida-header">
+                            <i class="fas fa-glass-whiskey"></i>
+                            <h3>REFRESCOS Y VARIEDAD</h3>
+                        </div>
+                        <div class="cerveza-list">
+                            <div class="cerveza-row"><span class="cerveza-name">Coca-Cola <span class="cerveza-ml">(500ml)</span></span><span class="cerveza-price">$40</span></div>
+                            <div class="cerveza-row"><span class="cerveza-name">Coca-Cola Light <span class="cerveza-ml">(500ml)</span></span><span class="cerveza-price">$40</span></div>
+                            <div class="cerveza-row"><span class="cerveza-name">Coca-Cola Sin Azúcar <span class="cerveza-ml">(500ml)</span></span><span class="cerveza-price">$40</span></div>
+                            <div class="cerveza-row"><span class="cerveza-name">Topochico <span class="cerveza-ml">(355ml)</span></span><span class="cerveza-price">$35</span></div>
                         </div>
                     </div>
 
@@ -1314,7 +1209,8 @@
                         </div>
                         <div class="cerveza-list">
                             <div class="cerveza-row"><span class="cerveza-name">Indio</span><span class="cerveza-price">$45</span></div>
-                            <div class="cerveza-row"><span class="cerveza-name">Tecate</span><span class="cerveza-price">$45</span></div>
+                            <div class="cerveza-row"><span class="cerveza-name">Tecate Ligth</span><span class="cerveza-price">$45</span></div>
+                            <div class="cerveza-row"><span class="cerveza-name">Tecate Roja</span><span class="cerveza-price">$50</span></div>
                             <div class="cerveza-row"><span class="cerveza-name">Carta Blanca</span><span class="cerveza-price">$45</span></div>
                             <div class="cerveza-row"><span class="cerveza-name">XX Lager</span><span class="cerveza-price">$50</span></div>
                             <div class="cerveza-row"><span class="cerveza-name">Bohemia Clara</span><span class="cerveza-price">$55</span></div>
