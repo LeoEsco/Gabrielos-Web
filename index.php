@@ -9,7 +9,7 @@
             <h1>Hechas artesanalmente con tradición... <span class="text-gold">donde la calidad es el ingrediente principal!</span></h1>
             <div style="margin-top: 30px;">
                 
-                <a href="menu.php" class="btn btn-primary">VER MENÚ</a>
+                <a href="menu.php" class="btn btn-primary">VER MENÚ.</a>
             </div>
         </div>
     </header>
