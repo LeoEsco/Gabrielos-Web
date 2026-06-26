@@ -22,35 +22,35 @@
 
         <div class="gallery-reel fade-in-right">
             <div class="reel-item">
-                <img src="imgmain/imgcarrusel/img1.jpeg" alt="Pizza Detalle">
+                <img loading="lazy" src="imgmain/imgcarrusel/img1.jpeg" alt="Pizza Detalle">
                 <div class="reel-overlay"><i class="fas fa-camera reel-icon"></i></div>
             </div>
             <div class="reel-item">
-                <img src="imgmain/imgcarrusel/img2.jpeg" alt="Horno Fuego">
+                <img loading="lazy" src="imgmain/imgcarrusel/img2.jpeg" alt="Horno Fuego">
                 <div class="reel-overlay"><i class="fas fa-fire reel-icon"></i></div>
             </div>
             <div class="reel-item">
-                <img src="imgmain/imgcarrusel/img3.jpeg" alt="Pizza Mesa">
+                <img loading="lazy" src="imgmain/imgcarrusel/img3.jpeg" alt="Pizza Mesa">
                 <div class="reel-overlay"><i class="fas fa-utensils reel-icon"></i></div>
             </div>
             <div class="reel-item">
-                <img src="imgmain/imgcarrusel/img4.jpeg" alt="Bebidas">
+                <img loading="lazy" src="imgmain/imgcarrusel/img4.jpeg" alt="Bebidas">
                 <div class="reel-overlay"><i class="fas fa-glass-cheers reel-icon"></i></div>
             </div>
             <div class="reel-item">
-                <img src="imgmain/imgcarrusel/img5.jpeg" alt="Ingredientes">
+                <img loading="lazy" src="imgmain/imgcarrusel/img5.jpeg" alt="Ingredientes">
                 <div class="reel-overlay"><i class="fas fa-leaf reel-icon"></i></div>
             </div>
             <div class="reel-item">
-                <img src="imgmain/imgcarrusel/img6.jpeg" alt="Ambiente">
+                <img loading="lazy" src="imgmain/imgcarrusel/img6.jpeg" alt="Ambiente">
                 <div class="reel-overlay"><i class="fas fa-users reel-icon"></i></div>
             </div>
             <div class="reel-item">
-                <img src="imgmain/imgcarrusel/img7.jpeg" alt="Ambiente">
+                <img loading="lazy" src="imgmain/imgcarrusel/img7.jpeg" alt="Ambiente">
                 <div class="reel-overlay"><i class="fas fa-users reel-icon"></i></div>
             </div>
             <div class="reel-item">
-                <img src="imgmain/imgcarrusel/img8.jpeg" alt="Ambiente">
+                <img loading="lazy" src="imgmain/imgcarrusel/img8.jpeg" alt="Ambiente">
                 <div class="reel-overlay"><i class="fas fa-users reel-icon"></i></div>
             </div>
         </div>
@@ -60,7 +60,7 @@
         <div class="container grid-2">
             
             <div class="image-column fade-in-left">
-                <img src="imgmain/boneless2x1.jpg" alt="Promoción Boneless y Cerveza Stella Artois" class="promo-rect-img">
+                <img loading="lazy" src="imgmain/boneless2x1.jpg" alt="Promoción Boneless y Cerveza Stella Artois" class="promo-rect-img">
             </div>
 
             <div class="text-column fade-in-right">
@@ -86,7 +86,7 @@
         <div class="container grid-2">
             
             <div class="image-column fade-in-left">
-                <img src="imgmain/pizzados.jpeg" alt="Promoción Boneless y Cerveza Stella Artois" class="promo-rect-img">
+                <img loading="lazy" src="imgmain/pizzados.jpeg" alt="Promoción Boneless y Cerveza Stella Artois" class="promo-rect-img">
             </div>
 
             <div class="text-column fade-in-right">
@@ -108,7 +108,7 @@
         <div class="container grid-2">
             
             <div class="image-column fade-in-left">
-                <img src="imgmain/cumple.jpeg" alt="Promoción Boneless y Cerveza Stella Artois" class="promo-rect-img">
+                <img loading="lazy" src="imgmain/cumple.jpeg" alt="Promoción Boneless y Cerveza Stella Artois" class="promo-rect-img">
             </div>
 
             <div class="text-column fade-in-right">
@@ -130,7 +130,7 @@
         <div class="container grid-2">
             
             <div class="image-column fade-in-left">
-                <img src="imgmain/cerveza.jpeg" alt="Promoción Boneless y Cerveza Stella Artois" class="promo-rect-img">
+                <img loading="lazy" src="imgmain/cerveza.jpeg" alt="Promoción Boneless y Cerveza Stella Artois" class="promo-rect-img">
             </div>
 
             <div class="text-column fade-in-right">
@@ -168,7 +168,7 @@
 
             <div class="image-column fade-in-right">
                 <div class="event-img-wrapper">
-                    <img src="imgmain/reserva.jpeg" alt="Evento privado en Gabrielos Pizza" class="event-img-offset">
+                    <img loading="lazy" src="imgmain/vendemosalcohol.jpg" alt="Evento privado en Gabrielos Pizza" class="event-img-offset">
                 </div>
             </div>
 
