@@ -121,7 +121,299 @@
                 }
             </style>
 
+            <!-- ==================== BANNER PUBLICITARIO ==================== -->
+            <style>
+                /* === Banner Publicitario === */
+                .promo-banner-container {
+                    max-width: 700px;
+                    margin: 0 auto 40px auto;
+                    perspective: 1000px;
+                }
+
+                .promo-banner {
+                    position: relative;
+                    border-radius: 16px;
+                    overflow: hidden;
+                    background: #0a0a0a;
+                    border: 2px solid rgba(213, 153, 69, 0.4);
+                    box-shadow: 
+                        0 0 30px rgba(213, 153, 69, 0.15),
+                        0 15px 40px rgba(0, 0, 0, 0.6),
+                        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+                    transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1), 
+                                box-shadow 0.5s cubic-bezier(0.23, 1, 0.32, 1),
+                                border-color 0.5s ease;
+                    animation: borderGlow 3s ease-in-out infinite;
+                }
+
+                @keyframes borderGlow {
+                    0%, 100% { box-shadow: 0 0 20px rgba(213, 153, 69, 0.1), 0 15px 40px rgba(0,0,0,0.6); }
+                    50%      { box-shadow: 0 0 40px rgba(213, 153, 69, 0.25), 0 15px 40px rgba(0,0,0,0.6); }
+                }
+
+                .promo-banner:hover {
+                    transform: translateY(-4px) scale(1.01);
+                    border-color: rgba(213, 153, 69, 0.8);
+                    animation: none;
+                    box-shadow: 
+                        0 0 50px rgba(213, 153, 69, 0.3),
+                        0 25px 60px rgba(0, 0, 0, 0.7),
+                        inset 0 1px 0 rgba(255, 255, 255, 0.08);
+                }
+
+                /* Corner decorations */
+                .promo-banner::before,
+                .promo-banner::after {
+                    content: '';
+                    position: absolute;
+                    z-index: 3;
+                    pointer-events: none;
+                }
+
+                .promo-banner::before {
+                    top: 8px; left: 8px;
+                    width: 30px; height: 30px;
+                    border-top: 2px solid #d59945;
+                    border-left: 2px solid #d59945;
+                    border-radius: 4px 0 0 0;
+                    opacity: 0.7;
+                    transition: all 0.4s ease;
+                }
+                .promo-banner::after {
+                    bottom: 8px; right: 8px;
+                    width: 30px; height: 30px;
+                    border-bottom: 2px solid #d59945;
+                    border-right: 2px solid #d59945;
+                    border-radius: 0 0 4px 0;
+                    opacity: 0.7;
+                    transition: all 0.4s ease;
+                }
+                .promo-banner:hover::before,
+                .promo-banner:hover::after {
+                    width: 40px; height: 40px;
+                    opacity: 1;
+                }
+
+                /* Inner corner decorations */
+                .promo-corners::before,
+                .promo-corners::after {
+                    content: '';
+                    position: absolute;
+                    z-index: 3;
+                    pointer-events: none;
+                }
+                .promo-corners::before {
+                    top: 8px; right: 8px;
+                    width: 30px; height: 30px;
+                    border-top: 2px solid #d59945;
+                    border-right: 2px solid #d59945;
+                    border-radius: 0 4px 0 0;
+                    opacity: 0.7;
+                    transition: all 0.4s ease;
+                }
+                .promo-corners::after {
+                    bottom: 8px; left: 8px;
+                    width: 30px; height: 30px;
+                    border-bottom: 2px solid #d59945;
+                    border-left: 2px solid #d59945;
+                    border-radius: 0 0 0 4px;
+                    opacity: 0.7;
+                    transition: all 0.4s ease;
+                }
+                .promo-banner:hover .promo-corners::before,
+                .promo-banner:hover .promo-corners::after {
+                    width: 40px; height: 40px;
+                    opacity: 1;
+                }
+
+                /* Image */
+                .promo-banner-img {
+                    width: 100%;
+                    aspect-ratio: auto;
+                    object-fit: contain;
+                    display: block;
+                    transition: transform 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+                }
+                .promo-banner:hover .promo-banner-img {
+                    transform: scale(1.04);
+                }
+
+                /* Vignette overlay */
+                .promo-vignette {
+                    position: absolute;
+                    top: 0; left: 0; right: 0; bottom: 0;
+                    z-index: 1;
+                    pointer-events: none;
+                    box-shadow: inset 0 0 80px rgba(0, 0, 0, 0.5);
+                    border-radius: 14px;
+                }
+
+                /* Bottom separator */
+                .promo-separator {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 12px;
+                    margin-top: 16px;
+                }
+                .promo-separator::before,
+                .promo-separator::after {
+                    content: '';
+                    flex: 1;
+                    max-width: 120px;
+                    height: 1px;
+                    background: linear-gradient(90deg, transparent, rgba(213,153,69,0.4), transparent);
+                }
+                .promo-separator-diamond {
+                    width: 8px;
+                    height: 8px;
+                    background: #d59945;
+                    transform: rotate(45deg);
+                    opacity: 0.5;
+                    flex-shrink: 0;
+                }
+
+                /* Shimmer sweep effect */
+                .promo-shimmer {
+                    position: absolute;
+                    top: 0; left: -100%;
+                    width: 60%;
+                    height: 100%;
+                    background: linear-gradient(
+                        105deg,
+                        transparent 30%,
+                        rgba(213, 153, 69, 0.08) 45%,
+                        rgba(255, 255, 255, 0.12) 50%,
+                        rgba(213, 153, 69, 0.08) 55%,
+                        transparent 70%
+                    );
+                    z-index: 2;
+                    pointer-events: none;
+                    animation: shimmerSweep 4s ease-in-out infinite;
+                }
+
+                @keyframes shimmerSweep {
+                    0%   { left: -100%; opacity: 0; }
+                    10%  { opacity: 1; }
+                    100% { left: 200%; opacity: 0; }
+                }
+
+                /* Badge "NUEVO" */
+                .promo-badge {
+                    position: absolute;
+                    top: 16px; left: 16px;
+                    z-index: 4;
+                    background: linear-gradient(135deg, #d59945, #b88235);
+                    color: #000;
+                    font-family: 'Oswald', sans-serif;
+                    font-weight: 700;
+                    font-size: 0.75rem;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    padding: 6px 16px;
+                    border-radius: 4px;
+                    box-shadow: 0 4px 15px rgba(213, 153, 69, 0.4);
+                    animation: badgePulse 2.5s ease-in-out infinite;
+                }
+
+                @keyframes badgePulse {
+                    0%, 100% { box-shadow: 0 4px 15px rgba(213, 153, 69, 0.4); }
+                    50%      { box-shadow: 0 4px 25px rgba(213, 153, 69, 0.7); }
+                }
+
+                /* Bottom caption overlay */
+                .promo-caption {
+                    position: absolute;
+                    bottom: 0; left: 0; right: 0;
+                    z-index: 3;
+                    padding: 30px 20px 16px;
+                    background: linear-gradient(transparent, rgba(0,0,0,0.85));
+                    text-align: center;
+                    transform: translateY(4px);
+                    opacity: 0.9;
+                    transition: all 0.4s ease;
+                }
+                .promo-banner:hover .promo-caption {
+                    transform: translateY(0);
+                    opacity: 1;
+                }
+
+                .promo-caption-title {
+                    font-family: 'Oswald', sans-serif;
+                    font-size: 1.15rem;
+                    font-weight: 700;
+                    color: #d59945;
+                    letter-spacing: 1.5px;
+                    text-transform: uppercase;
+                    margin-bottom: 2px;
+                }
+                .promo-caption-sub {
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 0.8rem;
+                    color: rgba(255,255,255,0.7);
+                    font-weight: 300;
+                }
+
+                /* Top label "DESTACADO" */
+                .promo-top-label {
+                    text-align: center;
+                    margin-bottom: 12px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 14px;
+                }
+                .promo-top-label span {
+                    font-family: 'Oswald', sans-serif;
+                    font-size: 0.8rem;
+                    letter-spacing: 4px;
+                    text-transform: uppercase;
+                    color: #d59945;
+                    font-weight: 400;
+                }
+                .promo-top-label::before,
+                .promo-top-label::after {
+                    content: '';
+                    flex: 1;
+                    max-width: 80px;
+                    height: 1px;
+                    background: linear-gradient(90deg, transparent, #d59945, transparent);
+                }
+
+                /* Responsive */
+                @media (max-width: 600px) {
+                    .promo-banner-container { margin: 0 auto 30px auto; }
+                    .promo-caption-title { font-size: 1rem; }
+                    .promo-badge { font-size: 0.65rem; padding: 5px 12px; top: 12px; left: 12px; }
+                    .promo-banner::before { top: 6px; left: 6px; }
+                    .promo-banner::after { bottom: 6px; right: 6px; }
+                    .promo-corners::before { top: 6px; right: 6px; }
+                    .promo-corners::after { bottom: 6px; left: 6px; }
+                }
+            </style>
+
+            <div class="promo-banner-container fade-in-up">
+                <div class="promo-top-label">
+                    <span>✦ Destacado ✦</span>
+                </div>
+                <div class="promo-banner">
+                    <div class="promo-corners"></div>
+                    <span class="promo-badge">Nuevo</span>
+                    <img class="promo-banner-img" src="imgmenu/pizzasarte/promochida.jpg" alt="Promoción Gabrielos Pizza"
+                         loading="lazy"
+                         width="1080" height="350">
+                    <div class="promo-vignette"></div>
+                    <div class="promo-shimmer"></div>
+                    
+                </div>
+                <div class="promo-separator">
+                    <span class="promo-separator-diamond"></span>
+                </div>
+            </div>
+            <!-- ==================== FIN BANNER PUBLICITARIO ==================== -->
+
             <div class="ingredientes-wrap" style="margin-bottom: 30px;">
+
                 <fieldset class="tabla-ingredientes">
                     <legend>INGREDIENTES</legend>
 
