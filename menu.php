@@ -399,9 +399,9 @@
                 <div class="promo-banner">
                     <div class="promo-corners"></div>
                     <span class="promo-badge">Nuevo</span>
-                    <img class="promo-banner-img" src="imgmenu/pizzasarte/promochida.jpg" alt="Promoción Gabrielos Pizza"
-                         loading="lazy"
-                         width="1080" height="350">
+                    <video class="promo-banner-img" autoplay muted loop playsinline>
+                        <source src="imgmenu/pizzasarte/videopromo.mp4" type="video/mp4">
+                    </video>
                     <div class="promo-vignette"></div>
                     <div class="promo-shimmer"></div>
                     
