@@ -399,9 +399,8 @@
                 <div class="promo-banner">
                     <div class="promo-corners"></div>
                     <span class="promo-badge">Nuevo</span>
-                    <video class="promo-banner-img" autoplay muted loop playsinline>
-                        <source src="imgmenu/pizzasarte/videopromo.mp4" type="video/mp4">
-                    </video>
+                    <img class="promo-banner-img" src="imgmenu/pizzasarte/promochida.jpg" alt="Promoción Gabrielos Pizza"
+                         loading="lazy">
                     <div class="promo-vignette"></div>
                     <div class="promo-shimmer"></div>
                     
@@ -1363,7 +1362,7 @@
                             <div class="cerveza-row"><span class="cerveza-name">Agua de Fresa</span><span class="cerveza-price">$40</span></div>
                             <div class="cerveza-row"><span class="cerveza-name">Agua de Fresa con Limón</span><span class="cerveza-price">$40</span></div>
                             <div class="cerveza-row"><span class="cerveza-name">Agua de Fresa con Piña</span><span class="cerveza-price">$40</span></div>
-                            <div class="cerveza-row jarra-row"><span class="cerveza-name">Jarra <span class="cerveza-ml">(2.5L)</span></span><span class="cerveza-price">$179</span></div>
+                            <div class="cerveza-row jarra-row"><span class="cerveza-name">Jarra </span><span class="cerveza-price">$179</span></div>
                         </div>
                     </div>
 
@@ -1377,7 +1376,7 @@
                             <div class="cerveza-row"><span class="cerveza-name">Agua de Limón</span><span class="cerveza-price">$40</span></div>
                             <div class="cerveza-row"><span class="cerveza-name">Agua de Pepino Limón</span><span class="cerveza-price">$40</span></div>
                             <div class="cerveza-row"><span class="cerveza-name">Limonada Mineral</span><span class="cerveza-price">$55</span></div>
-                            <div class="cerveza-row jarra-row"><span class="cerveza-name">Jarra <span class="cerveza-ml">(2.5L)</span></span><span class="cerveza-price">$179</span></div>
+                            <div class="cerveza-row jarra-row"><span class="cerveza-name">Jarra </span><span class="cerveza-price">$179</span></div>
                         </div>
                     </div>
 
@@ -1390,7 +1389,7 @@
                         <div class="cerveza-list">
                             <div class="cerveza-row"><span class="cerveza-name">Agua de Piña con Limón</span><span class="cerveza-price">$40</span></div>
                             <div class="cerveza-row"><span class="cerveza-name">Agua de Piña con Mango</span><span class="cerveza-price">$40</span></div>
-                            <div class="cerveza-row jarra-row"><span class="cerveza-name">Jarra <span class="cerveza-ml">(2.5L)</span></span><span class="cerveza-price">$179</span></div>
+                            <div class="cerveza-row jarra-row"><span class="cerveza-name">Jarra </span><span class="cerveza-price">$179</span></div>
                         </div>
                     </div>
 
@@ -1404,7 +1403,7 @@
                             <div class="cerveza-row"><span class="cerveza-name">Agua de Mango</span><span class="cerveza-price">$40</span></div>
                             <div class="cerveza-row"><span class="cerveza-name">Agua de Mango Fresa</span><span class="cerveza-price">$40</span></div>
                             <div class="cerveza-row"><span class="cerveza-name">Agua de Mango con Limón</span><span class="cerveza-price">$40</span></div>
-                            <div class="cerveza-row jarra-row"><span class="cerveza-name">Jarra <span class="cerveza-ml">(2.5L)</span></span><span class="cerveza-price">$179</span></div>
+                            <div class="cerveza-row jarra-row"><span class="cerveza-name">Jarra </span><span class="cerveza-price">$179</span></div>
                         </div>
                     </div>
 
@@ -1417,7 +1416,7 @@
                         <div class="cerveza-list">
                             <div class="cerveza-row"><span class="cerveza-name">Agua de Jamaica</span><span class="cerveza-price">$40</span></div>
                             <div class="cerveza-row"><span class="cerveza-name">Agua de Jamaica con Limón</span><span class="cerveza-price">$40</span></div>
-                            <div class="cerveza-row jarra-row"><span class="cerveza-name">Jarra <span class="cerveza-ml">(2.5L)</span></span><span class="cerveza-price">$179</span></div>
+                            <div class="cerveza-row jarra-row"><span class="cerveza-name">Jarra </span><span class="cerveza-price">$179</span></div>
                         </div>
                     </div>
 
@@ -1430,8 +1429,8 @@
                         <div class="cerveza-list">
                             <div class="cerveza-row"><span class="cerveza-name">Frutos Rojos <span class="cerveza-ml">(500ml)</span></span><span class="cerveza-price">$80</span></div>
                             <div class="cerveza-row"><span class="cerveza-name">Limonada de Frutos Rojos <span class="cerveza-ml">(500ml)</span></span><span class="cerveza-price">$55</span></div>
-                            <div class="cerveza-row jarra-row"><span class="cerveza-name">Jarra de Frutos Rojos <span class="cerveza-ml">(2.5L)</span></span><span class="cerveza-price">$320</span></div>
-                            <div class="cerveza-row jarra-row"><span class="cerveza-name">Jarra de Limonada de Frutos Rojos <span class="cerveza-ml">(2.5L)</span></span><span class="cerveza-price">$220</span></div>
+                            <div class="cerveza-row jarra-row"><span class="cerveza-name">Jarra de Frutos Rojos </span><span class="cerveza-price">$320</span></div>
+                            <div class="cerveza-row jarra-row"><span class="cerveza-name">Jarra de Limonada de Frutos Rojos </span><span class="cerveza-price">$220</span></div>
                         </div>
                     </div>
 
