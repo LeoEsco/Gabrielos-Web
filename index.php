@@ -60,7 +60,7 @@
         <div class="container grid-2">
             
             <div class="image-column fade-in-left">
-                <img loading="lazy" src="imgmain/boneless2x1.jpg" alt="Promoción Boneless y Cerveza Stella Artois" class="promo-rect-img">
+                <img loading="lazy" src="imgmain/dosporuno.jpeg" alt="Promoción Boneless y Cerveza Stella Artois" class="promo-rect-img">
             </div>
 
             <div class="text-column fade-in-right">
