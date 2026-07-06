@@ -86,7 +86,7 @@
         <div class="container grid-2">
             
             <div class="image-column fade-in-left">
-                <img loading="lazy" src="imgmain/pizzados.jpeg" alt="Promoción Boneless y Cerveza Stella Artois" class="promo-rect-img">
+                <img loading="lazy" src="imgmain/pizzados1.jpeg" alt="Promoción Boneless y Cerveza Stella Artois" class="promo-rect-img">
             </div>
 
             <div class="text-column fade-in-right">
@@ -108,7 +108,7 @@
         <div class="container grid-2">
             
             <div class="image-column fade-in-left">
-                <img loading="lazy" src="imgmain/cumple.jpeg" alt="Promoción Boneless y Cerveza Stella Artois" class="promo-rect-img">
+                <img loading="lazy" src="imgmain/cumple1.jpeg" alt="Promoción Boneless y Cerveza Stella Artois" class="promo-rect-img">
             </div>
 
             <div class="text-column fade-in-right">
