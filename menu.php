@@ -1443,7 +1443,7 @@
                         <div class="cerveza-list">
                             <div class="cerveza-row"><span class="cerveza-name">Jugo de Manzana <span class="cerveza-ml">(500ml)</span></span><span class="cerveza-price">$35</span></div>
                             <div class="cerveza-row"><span class="cerveza-name">Jugo de Mango <span class="cerveza-ml">(500ml)</span></span><span class="cerveza-price">$35</span></div>
-                            <div class="cerveza-row"><span class="cerveza-name">Jugo de Uva <span class="cerveza-ml">(500ml)</span></span><span class="cerveza-price">$35</span></div>
+                            
                             <div class="cerveza-row"><span class="cerveza-name">Jugo de Durazno <span class="cerveza-ml">(500ml)</span></span><span class="cerveza-price">$35</span></div>
                             <div class="cerveza-row"><span class="cerveza-name">Jugo de Naranja <span class="cerveza-ml">(500ml)</span></span><span class="cerveza-price">$35</span></div>
                             <div class="cerveza-row"><span class="cerveza-name">Fuzetea Limón <span class="cerveza-ml">(355ml)</span></span><span class="cerveza-price">$35</span></div>
