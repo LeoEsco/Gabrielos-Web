@@ -1361,7 +1361,7 @@
                         <div class="cerveza-list">
                             <div class="cerveza-row"><span class="cerveza-name">Agua de Fresa</span><span class="cerveza-price">$40</span></div>
                             <div class="cerveza-row"><span class="cerveza-name">Agua de Fresa con Limón</span><span class="cerveza-price">$40</span></div>
-                            <div class="cerveza-row"><span class="cerveza-name">Agua de Fresa con Piña</span><span class="cerveza-price">$40</span></div>
+                            
                             <div class="cerveza-row jarra-row"><span class="cerveza-name">Jarra </span><span class="cerveza-price">$179</span></div>
                         </div>
                     </div>
@@ -1387,7 +1387,7 @@
                             <h3>AGUAS DE PIÑA <span class="cerveza-ml">(500ml)</span></h3>
                         </div>
                         <div class="cerveza-list">
-                            <div class="cerveza-row"><span class="cerveza-name">Agua de Piña con Limón</span><span class="cerveza-price">$40</span></div>
+                            
                             <div class="cerveza-row"><span class="cerveza-name">Agua de Piña con Mango</span><span class="cerveza-price">$40</span></div>
                             <div class="cerveza-row jarra-row"><span class="cerveza-name">Jarra </span><span class="cerveza-price">$179</span></div>
                         </div>
@@ -1402,7 +1402,7 @@
                         <div class="cerveza-list">
                             <div class="cerveza-row"><span class="cerveza-name">Agua de Mango</span><span class="cerveza-price">$40</span></div>
                             <div class="cerveza-row"><span class="cerveza-name">Agua de Mango Fresa</span><span class="cerveza-price">$40</span></div>
-                            <div class="cerveza-row"><span class="cerveza-name">Agua de Mango con Limón</span><span class="cerveza-price">$40</span></div>
+                            
                             <div class="cerveza-row jarra-row"><span class="cerveza-name">Jarra </span><span class="cerveza-price">$179</span></div>
                         </div>
                     </div>
